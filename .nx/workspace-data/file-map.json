@@ -1,0 +1,2019 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.8.0",
+  "deps": {
+    "@types/node": "^22.9.0",
+    "husky": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "nx": "19.8.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.6.3"
+  },
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "@parkify/api": [
+        {
+          "file": "apps/api/.eslintrc.js",
+          "hash": "9303410491669713978"
+        },
+        {
+          "file": "apps/api/.gitignore",
+          "hash": "672911037926083482"
+        },
+        {
+          "file": "apps/api/docker-compose.yml",
+          "hash": "1556975000852968006"
+        },
+        {
+          "file": "apps/api/nest-cli.json",
+          "hash": "4467638529304767916"
+        },
+        {
+          "file": "apps/api/package.json",
+          "hash": "15336176887019757451"
+        },
+        {
+          "file": "apps/api/prisma/migrations/20240505193648_init/migration.sql",
+          "hash": "7078896841396415550"
+        },
+        {
+          "file": "apps/api/prisma/migrations/migration_lock.toml",
+          "hash": "11493296588214560035"
+        },
+        {
+          "file": "apps/api/prisma/models.md",
+          "hash": "6735969366609367862"
+        },
+        {
+          "file": "apps/api/prisma/schema.prisma",
+          "hash": "11736990228781018795"
+        },
+        {
+          "file": "apps/api/prisma/seed/data.ts",
+          "hash": "7026843776968885701"
+        },
+        {
+          "file": "apps/api/prisma/seed/index.ts",
+          "hash": "17721017675990397148"
+        },
+        {
+          "file": "apps/api/prisma/seed/util.ts",
+          "hash": "721550709722941050"
+        },
+        {
+          "file": "apps/api/src/app.controller.spec.ts",
+          "hash": "5510965611701279714"
+        },
+        {
+          "file": "apps/api/src/app.controller.ts",
+          "hash": "13740950960885762249"
+        },
+        {
+          "file": "apps/api/src/app.module.ts",
+          "hash": "10589221118200293505"
+        },
+        {
+          "file": "apps/api/src/app.service.ts",
+          "hash": "5353600983207877515"
+        },
+        {
+          "file": "apps/api/src/common/auth/auth.decorator.ts",
+          "hash": "17369791658433951916"
+        },
+        {
+          "file": "apps/api/src/common/auth/auth.guard.ts",
+          "hash": "3161254704319805798"
+        },
+        {
+          "file": "apps/api/src/common/auth/util.ts",
+          "hash": "8260851733487775509"
+        },
+        {
+          "file": "apps/api/src/common/dtos/common.dto.ts",
+          "hash": "13600385310422568493"
+        },
+        {
+          "file": "apps/api/src/common/dtos/common.input.ts",
+          "hash": "6999737539615291382"
+        },
+        {
+          "file": "apps/api/src/common/prisma/prisma.module.ts",
+          "hash": "8216479145703643961"
+        },
+        {
+          "file": "apps/api/src/common/prisma/prisma.service.ts",
+          "hash": "11591434052459653982"
+        },
+        {
+          "file": "apps/api/src/common/types/index.ts",
+          "hash": "16677303857296328284"
+        },
+        {
+          "file": "apps/api/src/common/util.ts",
+          "hash": "6924959627715562176"
+        },
+        {
+          "file": "apps/api/src/main.ts",
+          "hash": "1116671714929814887"
+        },
+        {
+          "file": "apps/api/src/models/addresses/addresses.module.ts",
+          "hash": "6434657445914753977"
+        },
+        {
+          "file": "apps/api/src/models/addresses/graphql/addresses.resolver.ts",
+          "hash": "18099749694335041654"
+        },
+        {
+          "file": "apps/api/src/models/addresses/graphql/addresses.service.ts",
+          "hash": "17406894885159177500"
+        },
+        {
+          "file": "apps/api/src/models/addresses/graphql/dtos/create-address.input.ts",
+          "hash": "8289744327467505806"
+        },
+        {
+          "file": "apps/api/src/models/addresses/graphql/dtos/find.args.ts",
+          "hash": "2118780010299892416"
+        },
+        {
+          "file": "apps/api/src/models/addresses/graphql/dtos/order-by.args.ts",
+          "hash": "4498834658104024794"
+        },
+        {
+          "file": "apps/api/src/models/addresses/graphql/dtos/update-address.input.ts",
+          "hash": "709205322192196735"
+        },
+        {
+          "file": "apps/api/src/models/addresses/graphql/dtos/where.args.ts",
+          "hash": "13883443712900462632"
+        },
+        {
+          "file": "apps/api/src/models/addresses/graphql/entity/address.entity.ts",
+          "hash": "13868627723480828856"
+        },
+        {
+          "file": "apps/api/src/models/addresses/rest/addresses.controller.ts",
+          "hash": "15875679109646113768"
+        },
+        {
+          "file": "apps/api/src/models/addresses/rest/dtos/create.dto.ts",
+          "hash": "5086974508210289580"
+        },
+        {
+          "file": "apps/api/src/models/addresses/rest/dtos/query.dto.ts",
+          "hash": "12899076009113508807"
+        },
+        {
+          "file": "apps/api/src/models/addresses/rest/dtos/update.dto.ts",
+          "hash": "1743963397709290818"
+        },
+        {
+          "file": "apps/api/src/models/addresses/rest/entity/address.entity.ts",
+          "hash": "9928747122355455741"
+        },
+        {
+          "file": "apps/api/src/models/admins/admins.module.ts",
+          "hash": "1038883706945963314"
+        },
+        {
+          "file": "apps/api/src/models/admins/graphql/admins.resolver.ts",
+          "hash": "9515203819214213917"
+        },
+        {
+          "file": "apps/api/src/models/admins/graphql/admins.service.ts",
+          "hash": "8825115381679707474"
+        },
+        {
+          "file": "apps/api/src/models/admins/graphql/dtos/create-admin.input.ts",
+          "hash": "10251845630536299686"
+        },
+        {
+          "file": "apps/api/src/models/admins/graphql/dtos/find.args.ts",
+          "hash": "10993334857340200734"
+        },
+        {
+          "file": "apps/api/src/models/admins/graphql/dtos/order-by.args.ts",
+          "hash": "9889700798869580015"
+        },
+        {
+          "file": "apps/api/src/models/admins/graphql/dtos/update-admin.input.ts",
+          "hash": "13834033141724854649"
+        },
+        {
+          "file": "apps/api/src/models/admins/graphql/dtos/where.args.ts",
+          "hash": "4103544441501945524"
+        },
+        {
+          "file": "apps/api/src/models/admins/graphql/entity/admin.entity.ts",
+          "hash": "5492243059133659803"
+        },
+        {
+          "file": "apps/api/src/models/admins/rest/admins.controller.ts",
+          "hash": "12125087999804383934"
+        },
+        {
+          "file": "apps/api/src/models/admins/rest/dtos/create.dto.ts",
+          "hash": "17048321428179644377"
+        },
+        {
+          "file": "apps/api/src/models/admins/rest/dtos/query.dto.ts",
+          "hash": "3050947559904169406"
+        },
+        {
+          "file": "apps/api/src/models/admins/rest/dtos/update.dto.ts",
+          "hash": "16487658920261342124"
+        },
+        {
+          "file": "apps/api/src/models/admins/rest/entity/admin.entity.ts",
+          "hash": "16165744997480272099"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/booking-timelines.module.ts",
+          "hash": "12055469285019346471"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/graphql/booking-timelines.resolver.ts",
+          "hash": "12733937733437101422"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/graphql/booking-timelines.service.ts",
+          "hash": "12591381682494873833"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/graphql/dtos/create-booking-timeline.input.ts",
+          "hash": "15071588803867820783"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/graphql/dtos/find.args.ts",
+          "hash": "15032524229835034697"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/graphql/dtos/order-by.args.ts",
+          "hash": "18037499407048802282"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/graphql/dtos/update-booking-timeline.input.ts",
+          "hash": "15019739885714324851"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/graphql/dtos/where.args.ts",
+          "hash": "15108848308018098380"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/graphql/entity/booking-timeline.entity.ts",
+          "hash": "691592196717654289"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/rest/booking-timelines.controller.ts",
+          "hash": "7771586308416329090"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/rest/dtos/create.dto.ts",
+          "hash": "6414459765337565045"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/rest/dtos/query.dto.ts",
+          "hash": "6119325069551004414"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/rest/dtos/update.dto.ts",
+          "hash": "10990224845728933158"
+        },
+        {
+          "file": "apps/api/src/models/booking-timelines/rest/entity/booking-timeline.entity.ts",
+          "hash": "15531684687190066972"
+        },
+        {
+          "file": "apps/api/src/models/bookings/bookings.module.ts",
+          "hash": "14059690414134946648"
+        },
+        {
+          "file": "apps/api/src/models/bookings/graphql/bookings.resolver.ts",
+          "hash": "15813532868983876344"
+        },
+        {
+          "file": "apps/api/src/models/bookings/graphql/bookings.service.ts",
+          "hash": "5367937456193329306"
+        },
+        {
+          "file": "apps/api/src/models/bookings/graphql/dtos/create-booking.input.ts",
+          "hash": "16856511246695010919"
+        },
+        {
+          "file": "apps/api/src/models/bookings/graphql/dtos/find.args.ts",
+          "hash": "16474418255286099612"
+        },
+        {
+          "file": "apps/api/src/models/bookings/graphql/dtos/order-by.args.ts",
+          "hash": "13966423127895157521"
+        },
+        {
+          "file": "apps/api/src/models/bookings/graphql/dtos/update-booking.input.ts",
+          "hash": "10658228747327470002"
+        },
+        {
+          "file": "apps/api/src/models/bookings/graphql/dtos/where.args.ts",
+          "hash": "6643196122204542870"
+        },
+        {
+          "file": "apps/api/src/models/bookings/graphql/entity/booking.entity.ts",
+          "hash": "1560570887578084702"
+        },
+        {
+          "file": "apps/api/src/models/bookings/rest/bookings.controller.ts",
+          "hash": "15264767040926735444"
+        },
+        {
+          "file": "apps/api/src/models/bookings/rest/dtos/create.dto.ts",
+          "hash": "7613080138182149016"
+        },
+        {
+          "file": "apps/api/src/models/bookings/rest/dtos/query.dto.ts",
+          "hash": "10781796575325359727"
+        },
+        {
+          "file": "apps/api/src/models/bookings/rest/dtos/update.dto.ts",
+          "hash": "17907531380810820612"
+        },
+        {
+          "file": "apps/api/src/models/bookings/rest/entity/booking.entity.ts",
+          "hash": "15472913115161568327"
+        },
+        {
+          "file": "apps/api/src/models/companies/companies.module.ts",
+          "hash": "4071985723256367489"
+        },
+        {
+          "file": "apps/api/src/models/companies/graphql/companies.resolver.ts",
+          "hash": "4992377779639779190"
+        },
+        {
+          "file": "apps/api/src/models/companies/graphql/companies.service.ts",
+          "hash": "7333517543734454482"
+        },
+        {
+          "file": "apps/api/src/models/companies/graphql/dtos/create-company.input.ts",
+          "hash": "1185616920778935835"
+        },
+        {
+          "file": "apps/api/src/models/companies/graphql/dtos/find.args.ts",
+          "hash": "3795539492320269258"
+        },
+        {
+          "file": "apps/api/src/models/companies/graphql/dtos/order-by.args.ts",
+          "hash": "4514311487644089497"
+        },
+        {
+          "file": "apps/api/src/models/companies/graphql/dtos/update-company.input.ts",
+          "hash": "16747892830757404360"
+        },
+        {
+          "file": "apps/api/src/models/companies/graphql/dtos/where.args.ts",
+          "hash": "1412465428514108052"
+        },
+        {
+          "file": "apps/api/src/models/companies/graphql/entity/company.entity.ts",
+          "hash": "2136846400634174203"
+        },
+        {
+          "file": "apps/api/src/models/companies/rest/companies.controller.ts",
+          "hash": "13122808290027762629"
+        },
+        {
+          "file": "apps/api/src/models/companies/rest/dtos/create.dto.ts",
+          "hash": "9147800434957779566"
+        },
+        {
+          "file": "apps/api/src/models/companies/rest/dtos/query.dto.ts",
+          "hash": "5836192282713678266"
+        },
+        {
+          "file": "apps/api/src/models/companies/rest/dtos/update.dto.ts",
+          "hash": "15935102406463976107"
+        },
+        {
+          "file": "apps/api/src/models/companies/rest/entity/company.entity.ts",
+          "hash": "13826951659150470212"
+        },
+        {
+          "file": "apps/api/src/models/customers/customers.module.ts",
+          "hash": "12059141985562554871"
+        },
+        {
+          "file": "apps/api/src/models/customers/graphql/customers.resolver.ts",
+          "hash": "16260392050496961917"
+        },
+        {
+          "file": "apps/api/src/models/customers/graphql/customers.service.ts",
+          "hash": "13580156402220907076"
+        },
+        {
+          "file": "apps/api/src/models/customers/graphql/dtos/create-customer.input.ts",
+          "hash": "954218828052558759"
+        },
+        {
+          "file": "apps/api/src/models/customers/graphql/dtos/find.args.ts",
+          "hash": "8609177964816168245"
+        },
+        {
+          "file": "apps/api/src/models/customers/graphql/dtos/order-by.args.ts",
+          "hash": "17850832730024020755"
+        },
+        {
+          "file": "apps/api/src/models/customers/graphql/dtos/update-customer.input.ts",
+          "hash": "18044093418313322772"
+        },
+        {
+          "file": "apps/api/src/models/customers/graphql/dtos/where.args.ts",
+          "hash": "12829598205941522797"
+        },
+        {
+          "file": "apps/api/src/models/customers/graphql/entity/customer.entity.ts",
+          "hash": "9839337632322948723"
+        },
+        {
+          "file": "apps/api/src/models/customers/rest/customers.controller.ts",
+          "hash": "16639745443885755736"
+        },
+        {
+          "file": "apps/api/src/models/customers/rest/dtos/create.dto.ts",
+          "hash": "14778297793409982906"
+        },
+        {
+          "file": "apps/api/src/models/customers/rest/dtos/query.dto.ts",
+          "hash": "16647423807619588864"
+        },
+        {
+          "file": "apps/api/src/models/customers/rest/dtos/update.dto.ts",
+          "hash": "18141469963666453815"
+        },
+        {
+          "file": "apps/api/src/models/customers/rest/entity/customer.entity.ts",
+          "hash": "14924308638726299120"
+        },
+        {
+          "file": "apps/api/src/models/garages/garages.module.ts",
+          "hash": "17828985693593967159"
+        },
+        {
+          "file": "apps/api/src/models/garages/graphql/dtos/create-garage.input.ts",
+          "hash": "3930960982050490887"
+        },
+        {
+          "file": "apps/api/src/models/garages/graphql/dtos/find.args.ts",
+          "hash": "4867940706947336323"
+        },
+        {
+          "file": "apps/api/src/models/garages/graphql/dtos/order-by.args.ts",
+          "hash": "11174479023015797386"
+        },
+        {
+          "file": "apps/api/src/models/garages/graphql/dtos/search-filter.input.ts",
+          "hash": "4171931938438471246"
+        },
+        {
+          "file": "apps/api/src/models/garages/graphql/dtos/update-garage.input.ts",
+          "hash": "4733832282952856988"
+        },
+        {
+          "file": "apps/api/src/models/garages/graphql/dtos/where.args.ts",
+          "hash": "10900289934502049590"
+        },
+        {
+          "file": "apps/api/src/models/garages/graphql/entity/garage.entity.ts",
+          "hash": "7420023191233576255"
+        },
+        {
+          "file": "apps/api/src/models/garages/graphql/garages.resolver.ts",
+          "hash": "17515651120639463825"
+        },
+        {
+          "file": "apps/api/src/models/garages/graphql/garages.service.ts",
+          "hash": "5058719116635873907"
+        },
+        {
+          "file": "apps/api/src/models/garages/rest/dtos/create.dto.ts",
+          "hash": "7296895386424922766"
+        },
+        {
+          "file": "apps/api/src/models/garages/rest/dtos/query.dto.ts",
+          "hash": "6527281576689171743"
+        },
+        {
+          "file": "apps/api/src/models/garages/rest/dtos/update.dto.ts",
+          "hash": "3266306179280697787"
+        },
+        {
+          "file": "apps/api/src/models/garages/rest/entity/garage.entity.ts",
+          "hash": "5136260378150102031"
+        },
+        {
+          "file": "apps/api/src/models/garages/rest/garages.controller.ts",
+          "hash": "15536753870794338739"
+        },
+        {
+          "file": "apps/api/src/models/managers/graphql/dtos/create-manager.input.ts",
+          "hash": "1023704345705153752"
+        },
+        {
+          "file": "apps/api/src/models/managers/graphql/dtos/find.args.ts",
+          "hash": "12261610200530632730"
+        },
+        {
+          "file": "apps/api/src/models/managers/graphql/dtos/order-by.args.ts",
+          "hash": "7069324879716699710"
+        },
+        {
+          "file": "apps/api/src/models/managers/graphql/dtos/update-manager.input.ts",
+          "hash": "12074702479890228504"
+        },
+        {
+          "file": "apps/api/src/models/managers/graphql/dtos/where.args.ts",
+          "hash": "17749728535411615621"
+        },
+        {
+          "file": "apps/api/src/models/managers/graphql/entity/manager.entity.ts",
+          "hash": "7330572538874033841"
+        },
+        {
+          "file": "apps/api/src/models/managers/graphql/managers.resolver.ts",
+          "hash": "16850186386984393293"
+        },
+        {
+          "file": "apps/api/src/models/managers/graphql/managers.service.ts",
+          "hash": "17469481667104159169"
+        },
+        {
+          "file": "apps/api/src/models/managers/managers.module.ts",
+          "hash": "18139899723690626198"
+        },
+        {
+          "file": "apps/api/src/models/managers/rest/dtos/create.dto.ts",
+          "hash": "6531475034646237548"
+        },
+        {
+          "file": "apps/api/src/models/managers/rest/dtos/query.dto.ts",
+          "hash": "10723720638101543450"
+        },
+        {
+          "file": "apps/api/src/models/managers/rest/dtos/update.dto.ts",
+          "hash": "1128333348320027581"
+        },
+        {
+          "file": "apps/api/src/models/managers/rest/entity/manager.entity.ts",
+          "hash": "16973563852570893253"
+        },
+        {
+          "file": "apps/api/src/models/managers/rest/managers.controller.ts",
+          "hash": "2551820229018888576"
+        },
+        {
+          "file": "apps/api/src/models/reviews/graphql/dtos/create-review.input.ts",
+          "hash": "8800868206205972885"
+        },
+        {
+          "file": "apps/api/src/models/reviews/graphql/dtos/find.args.ts",
+          "hash": "13822633013639268811"
+        },
+        {
+          "file": "apps/api/src/models/reviews/graphql/dtos/order-by.args.ts",
+          "hash": "190281230273759587"
+        },
+        {
+          "file": "apps/api/src/models/reviews/graphql/dtos/update-review.input.ts",
+          "hash": "700346860168279479"
+        },
+        {
+          "file": "apps/api/src/models/reviews/graphql/dtos/where.args.ts",
+          "hash": "6849313495669456896"
+        },
+        {
+          "file": "apps/api/src/models/reviews/graphql/entity/review.entity.ts",
+          "hash": "4340318471110055880"
+        },
+        {
+          "file": "apps/api/src/models/reviews/graphql/reviews.resolver.ts",
+          "hash": "7339719177876146341"
+        },
+        {
+          "file": "apps/api/src/models/reviews/graphql/reviews.service.ts",
+          "hash": "14802031366879764893"
+        },
+        {
+          "file": "apps/api/src/models/reviews/rest/dtos/create.dto.ts",
+          "hash": "9632387744708006484"
+        },
+        {
+          "file": "apps/api/src/models/reviews/rest/dtos/query.dto.ts",
+          "hash": "15559584403878324010"
+        },
+        {
+          "file": "apps/api/src/models/reviews/rest/dtos/update.dto.ts",
+          "hash": "15590983305883704651"
+        },
+        {
+          "file": "apps/api/src/models/reviews/rest/entity/review.entity.ts",
+          "hash": "6322981615768130638"
+        },
+        {
+          "file": "apps/api/src/models/reviews/rest/reviews.controller.ts",
+          "hash": "9965500238321196697"
+        },
+        {
+          "file": "apps/api/src/models/reviews/reviews.module.ts",
+          "hash": "11012803846984894296"
+        },
+        {
+          "file": "apps/api/src/models/slots/graphql/dtos/create-slot.input.ts",
+          "hash": "6427009053688895050"
+        },
+        {
+          "file": "apps/api/src/models/slots/graphql/dtos/find.args.ts",
+          "hash": "1046163096687139343"
+        },
+        {
+          "file": "apps/api/src/models/slots/graphql/dtos/order-by.args.ts",
+          "hash": "9569824717322801007"
+        },
+        {
+          "file": "apps/api/src/models/slots/graphql/dtos/update-slot.input.ts",
+          "hash": "9930579094996734426"
+        },
+        {
+          "file": "apps/api/src/models/slots/graphql/dtos/where.args.ts",
+          "hash": "12251156402483109303"
+        },
+        {
+          "file": "apps/api/src/models/slots/graphql/entity/slot.entity.ts",
+          "hash": "11951484210031968634"
+        },
+        {
+          "file": "apps/api/src/models/slots/graphql/slots.resolver.ts",
+          "hash": "3452229900628356571"
+        },
+        {
+          "file": "apps/api/src/models/slots/graphql/slots.service.ts",
+          "hash": "6799414007476888799"
+        },
+        {
+          "file": "apps/api/src/models/slots/rest/dtos/create.dto.ts",
+          "hash": "7057557665412272778"
+        },
+        {
+          "file": "apps/api/src/models/slots/rest/dtos/query.dto.ts",
+          "hash": "16436122222171339733"
+        },
+        {
+          "file": "apps/api/src/models/slots/rest/dtos/update.dto.ts",
+          "hash": "5482769737370623630"
+        },
+        {
+          "file": "apps/api/src/models/slots/rest/entity/slot.entity.ts",
+          "hash": "9443700579468870291"
+        },
+        {
+          "file": "apps/api/src/models/slots/rest/slots.controller.ts",
+          "hash": "9618532480018662777"
+        },
+        {
+          "file": "apps/api/src/models/slots/slots.module.ts",
+          "hash": "15050256682416432358"
+        },
+        {
+          "file": "apps/api/src/models/stripe/dto/create-stripe-session.dto.ts",
+          "hash": "14556610588473595618"
+        },
+        {
+          "file": "apps/api/src/models/stripe/stripe.controller.ts",
+          "hash": "16593183782489889113"
+        },
+        {
+          "file": "apps/api/src/models/stripe/stripe.module.ts",
+          "hash": "8471147586972825154"
+        },
+        {
+          "file": "apps/api/src/models/stripe/stripe.service.ts",
+          "hash": "10835050533953407974"
+        },
+        {
+          "file": "apps/api/src/models/users/graphql/dtos/create-user.input.ts",
+          "hash": "4361444475036615824"
+        },
+        {
+          "file": "apps/api/src/models/users/graphql/dtos/find.args.ts",
+          "hash": "10419199079060722769"
+        },
+        {
+          "file": "apps/api/src/models/users/graphql/dtos/order-by.args.ts",
+          "hash": "17791852249699598069"
+        },
+        {
+          "file": "apps/api/src/models/users/graphql/dtos/update-user.input.ts",
+          "hash": "11123780907455855382"
+        },
+        {
+          "file": "apps/api/src/models/users/graphql/dtos/where.args.ts",
+          "hash": "16296798222340823105"
+        },
+        {
+          "file": "apps/api/src/models/users/graphql/entity/user.entity.ts",
+          "hash": "8082777815329539123"
+        },
+        {
+          "file": "apps/api/src/models/users/graphql/users.resolver.ts",
+          "hash": "13260853681579354301"
+        },
+        {
+          "file": "apps/api/src/models/users/graphql/users.service.ts",
+          "hash": "1412401033671786117"
+        },
+        {
+          "file": "apps/api/src/models/users/rest/dtos/create.dto.ts",
+          "hash": "5552619357474911984"
+        },
+        {
+          "file": "apps/api/src/models/users/rest/dtos/query.dto.ts",
+          "hash": "2557003068705433388"
+        },
+        {
+          "file": "apps/api/src/models/users/rest/dtos/update.dto.ts",
+          "hash": "5503911026235069919"
+        },
+        {
+          "file": "apps/api/src/models/users/rest/entity/user.entity.ts",
+          "hash": "15210888415950199393"
+        },
+        {
+          "file": "apps/api/src/models/users/rest/users.controller.ts",
+          "hash": "10187225101901608114"
+        },
+        {
+          "file": "apps/api/src/models/users/users.module.ts",
+          "hash": "3363922018062818244"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/graphql/dtos/create-valet-assignment.input.ts",
+          "hash": "15349848250369039908"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/graphql/dtos/find.args.ts",
+          "hash": "8454960654425238001"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/graphql/dtos/order-by.args.ts",
+          "hash": "10494159232906575568"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/graphql/dtos/update-valet-assignment.input.ts",
+          "hash": "3781597461571107718"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/graphql/dtos/where.args.ts",
+          "hash": "8065092124450791601"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/graphql/entity/valet-assignment.entity.ts",
+          "hash": "9591772933365986181"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/graphql/valet-assignments.resolver.ts",
+          "hash": "9735114643166685899"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/graphql/valet-assignments.service.ts",
+          "hash": "18187348787780240638"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/rest/dtos/create.dto.ts",
+          "hash": "745273530682286091"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/rest/dtos/query.dto.ts",
+          "hash": "15555936068266597500"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/rest/dtos/update.dto.ts",
+          "hash": "6872729378488544162"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/rest/entity/valet-assignment.entity.ts",
+          "hash": "12256232843016970363"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/rest/valet-assignments.controller.ts",
+          "hash": "18232625344110896892"
+        },
+        {
+          "file": "apps/api/src/models/valet-assignments/valet-assignments.module.ts",
+          "hash": "8230073291592823558"
+        },
+        {
+          "file": "apps/api/src/models/valets/graphql/dtos/create-valet.input.ts",
+          "hash": "7236095080963922836"
+        },
+        {
+          "file": "apps/api/src/models/valets/graphql/dtos/find.args.ts",
+          "hash": "2767092581693586972"
+        },
+        {
+          "file": "apps/api/src/models/valets/graphql/dtos/order-by.args.ts",
+          "hash": "850558580430857849"
+        },
+        {
+          "file": "apps/api/src/models/valets/graphql/dtos/update-valet.input.ts",
+          "hash": "3904325192926226805"
+        },
+        {
+          "file": "apps/api/src/models/valets/graphql/dtos/where.args.ts",
+          "hash": "11901865310594300375"
+        },
+        {
+          "file": "apps/api/src/models/valets/graphql/entity/valet.entity.ts",
+          "hash": "12296200410926487980"
+        },
+        {
+          "file": "apps/api/src/models/valets/graphql/valets.resolver.ts",
+          "hash": "7514977324846755423"
+        },
+        {
+          "file": "apps/api/src/models/valets/graphql/valets.service.ts",
+          "hash": "13850855624673655125"
+        },
+        {
+          "file": "apps/api/src/models/valets/rest/dtos/create.dto.ts",
+          "hash": "15277513223820453219"
+        },
+        {
+          "file": "apps/api/src/models/valets/rest/dtos/query.dto.ts",
+          "hash": "4827512560098192191"
+        },
+        {
+          "file": "apps/api/src/models/valets/rest/dtos/update.dto.ts",
+          "hash": "12117377443202933438"
+        },
+        {
+          "file": "apps/api/src/models/valets/rest/entity/valet.entity.ts",
+          "hash": "12625859155753168628"
+        },
+        {
+          "file": "apps/api/src/models/valets/rest/valets.controller.ts",
+          "hash": "9747977355673209448"
+        },
+        {
+          "file": "apps/api/src/models/valets/valets.module.ts",
+          "hash": "17382664580655695928"
+        },
+        {
+          "file": "apps/api/src/models/verifications/graphql/dtos/create-verification.input.ts",
+          "hash": "3604400370342823791"
+        },
+        {
+          "file": "apps/api/src/models/verifications/graphql/dtos/find.args.ts",
+          "hash": "9357677962473193479"
+        },
+        {
+          "file": "apps/api/src/models/verifications/graphql/dtos/order-by.args.ts",
+          "hash": "10076884615955528029"
+        },
+        {
+          "file": "apps/api/src/models/verifications/graphql/dtos/update-verification.input.ts",
+          "hash": "4351727106115701141"
+        },
+        {
+          "file": "apps/api/src/models/verifications/graphql/dtos/where.args.ts",
+          "hash": "12211678776254548263"
+        },
+        {
+          "file": "apps/api/src/models/verifications/graphql/entity/verification.entity.ts",
+          "hash": "2000205692236955417"
+        },
+        {
+          "file": "apps/api/src/models/verifications/graphql/verifications.resolver.ts",
+          "hash": "5411221416324945814"
+        },
+        {
+          "file": "apps/api/src/models/verifications/graphql/verifications.service.ts",
+          "hash": "14043139607134304599"
+        },
+        {
+          "file": "apps/api/src/models/verifications/rest/dtos/create.dto.ts",
+          "hash": "4542619402576175445"
+        },
+        {
+          "file": "apps/api/src/models/verifications/rest/dtos/query.dto.ts",
+          "hash": "17713656901726310789"
+        },
+        {
+          "file": "apps/api/src/models/verifications/rest/dtos/update.dto.ts",
+          "hash": "4959208587898493672"
+        },
+        {
+          "file": "apps/api/src/models/verifications/rest/entity/verification.entity.ts",
+          "hash": "11503330787204722904"
+        },
+        {
+          "file": "apps/api/src/models/verifications/rest/verifications.controller.ts",
+          "hash": "13795777177322050332"
+        },
+        {
+          "file": "apps/api/src/models/verifications/verifications.module.ts",
+          "hash": "4665288930832597702"
+        },
+        {
+          "file": "apps/api/src/schema.gql",
+          "hash": "11795699135774210975"
+        },
+        {
+          "file": "apps/api/test/app.e2e-spec.ts",
+          "hash": "13280887041518905980"
+        },
+        {
+          "file": "apps/api/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "apps/api/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "apps/api/tsconfig.json",
+          "hash": "5073866550243764688"
+        }
+      ],
+      "@parkify/web-admin": [
+        {
+          "file": "apps/web-admin/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "apps/web-admin/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "apps/web-admin/next.config.mjs",
+          "hash": "16492501828799852533"
+        },
+        {
+          "file": "apps/web-admin/package.json",
+          "hash": "8414064140967415484"
+        },
+        {
+          "file": "apps/web-admin/postcss.config.mjs",
+          "hash": "2557392112968376575"
+        },
+        {
+          "file": "apps/web-admin/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/web-admin/public/user.png",
+          "hash": "16941821795138000203"
+        },
+        {
+          "file": "apps/web-admin/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "apps/web-admin/src/app/api/auth/[...nextauth]/route.ts",
+          "hash": "7366840909368449911"
+        },
+        {
+          "file": "apps/web-admin/src/app/api/auth/token/route.ts",
+          "hash": "16938433310170514210"
+        },
+        {
+          "file": "apps/web-admin/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/web-admin/src/app/layout.tsx",
+          "hash": "14749164271760344159"
+        },
+        {
+          "file": "apps/web-admin/src/app/login/page.tsx",
+          "hash": "3100909399507413507"
+        },
+        {
+          "file": "apps/web-admin/src/app/manageAdmins/page.tsx",
+          "hash": "5520809553415931063"
+        },
+        {
+          "file": "apps/web-admin/src/app/page.tsx",
+          "hash": "14597376112387443575"
+        },
+        {
+          "file": "apps/web-admin/src/app/register/page.tsx",
+          "hash": "14153439251707408870"
+        },
+        {
+          "file": "apps/web-admin/tailwind.config.ts",
+          "hash": "16967495277415250122"
+        },
+        {
+          "file": "apps/web-admin/tsconfig.json",
+          "hash": "4320684160905164141"
+        },
+        {
+          "file": "apps/web-admin/types.d.ts",
+          "hash": "12936221474557794499"
+        }
+      ],
+      "@parkify/network": [
+        {
+          "file": "libs/network/codegen.ts",
+          "hash": "596092472759370737"
+        },
+        {
+          "file": "libs/network/next-auth.d.ts",
+          "hash": "6929401787329986376"
+        },
+        {
+          "file": "libs/network/package.json",
+          "hash": "17799382432574426251"
+        },
+        {
+          "file": "libs/network/src/config/apollo.tsx",
+          "hash": "18065035441060385382"
+        },
+        {
+          "file": "libs/network/src/config/authOptions.ts",
+          "hash": "12561023393091959816"
+        },
+        {
+          "file": "libs/network/src/fetch/index.ts",
+          "hash": "2908994720606023079"
+        },
+        {
+          "file": "libs/network/src/gql/generated.tsx",
+          "hash": "4044489140943426033"
+        },
+        {
+          "file": "libs/network/src/gql/queries.graphql",
+          "hash": "9388533150208624288"
+        },
+        {
+          "file": "libs/network/tsconfig.json",
+          "hash": "12053352178282715962"
+        }
+      ],
+      "@parkify/forms": [
+        {
+          "file": "libs/forms/package.json",
+          "hash": "526889026908072009"
+        },
+        {
+          "file": "libs/forms/src/adapters/searchFormAdapter.ts",
+          "hash": "12859981846027183809"
+        },
+        {
+          "file": "libs/forms/src/adapters/util.ts",
+          "hash": "813068890982100068"
+        },
+        {
+          "file": "libs/forms/src/bookSlot.tsx",
+          "hash": "13167031970618570807"
+        },
+        {
+          "file": "libs/forms/src/createCompany.ts",
+          "hash": "4380537853071539110"
+        },
+        {
+          "file": "libs/forms/src/createGarage.tsx",
+          "hash": "214789387913869615"
+        },
+        {
+          "file": "libs/forms/src/createSlots.ts",
+          "hash": "17504453533262577586"
+        },
+        {
+          "file": "libs/forms/src/createUid.ts",
+          "hash": "8462631711815053366"
+        },
+        {
+          "file": "libs/forms/src/createValet.ts",
+          "hash": "6440510132180395931"
+        },
+        {
+          "file": "libs/forms/src/login.tsx",
+          "hash": "1014189757167921858"
+        },
+        {
+          "file": "libs/forms/src/register.tsx",
+          "hash": "13399419665511730166"
+        },
+        {
+          "file": "libs/forms/src/schemas.ts",
+          "hash": "16014452263787135725"
+        },
+        {
+          "file": "libs/forms/src/searchGarages.tsx",
+          "hash": "6269681964426806692"
+        },
+        {
+          "file": "libs/forms/src/util/index.ts",
+          "hash": "15313947975565766165"
+        },
+        {
+          "file": "libs/forms/tsconfig.json",
+          "hash": "12053352178282715962"
+        }
+      ],
+      "@parkify/web-manager": [
+        {
+          "file": "apps/web-manager/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "apps/web-manager/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "apps/web-manager/next.config.mjs",
+          "hash": "16492501828799852533"
+        },
+        {
+          "file": "apps/web-manager/package.json",
+          "hash": "5423669807716563345"
+        },
+        {
+          "file": "apps/web-manager/postcss.config.mjs",
+          "hash": "2557392112968376575"
+        },
+        {
+          "file": "apps/web-manager/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/web-manager/public/user.png",
+          "hash": "16941821795138000203"
+        },
+        {
+          "file": "apps/web-manager/public/valet.jpeg",
+          "hash": "1602893464718500523"
+        },
+        {
+          "file": "apps/web-manager/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "apps/web-manager/src/app/api/auth/[...nextauth]/route.ts",
+          "hash": "7366840909368449911"
+        },
+        {
+          "file": "apps/web-manager/src/app/api/auth/token/route.ts",
+          "hash": "16938433310170514210"
+        },
+        {
+          "file": "apps/web-manager/src/app/bookings/page.tsx",
+          "hash": "607418826393570952"
+        },
+        {
+          "file": "apps/web-manager/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/web-manager/src/app/layout.tsx",
+          "hash": "14744261133593130585"
+        },
+        {
+          "file": "apps/web-manager/src/app/login/page.tsx",
+          "hash": "3100909399507413507"
+        },
+        {
+          "file": "apps/web-manager/src/app/new-garage/page.tsx",
+          "hash": "7126897121223647541"
+        },
+        {
+          "file": "apps/web-manager/src/app/page.tsx",
+          "hash": "17674529116221501078"
+        },
+        {
+          "file": "apps/web-manager/src/app/register/page.tsx",
+          "hash": "14153439251707408870"
+        },
+        {
+          "file": "apps/web-manager/src/app/valets/page.tsx",
+          "hash": "9458763151484524081"
+        },
+        {
+          "file": "apps/web-manager/tailwind.config.ts",
+          "hash": "16967495277415250122"
+        },
+        {
+          "file": "apps/web-manager/tsconfig.json",
+          "hash": "4320684160905164141"
+        },
+        {
+          "file": "apps/web-manager/types.d.ts",
+          "hash": "12936221474557794499"
+        }
+      ],
+      "@parkify/util": [
+        {
+          "file": "libs/util/constants.ts",
+          "hash": "2548118878588783040"
+        },
+        {
+          "file": "libs/util/date.ts",
+          "hash": "4172782034646401501"
+        },
+        {
+          "file": "libs/util/hooks/async.ts",
+          "hash": "8493820138059747599"
+        },
+        {
+          "file": "libs/util/hooks/cloudinary.ts",
+          "hash": "16797054993408262638"
+        },
+        {
+          "file": "libs/util/hooks/dialog.ts",
+          "hash": "1238686928551521995"
+        },
+        {
+          "file": "libs/util/hooks/directions.ts",
+          "hash": "12180658695919046680"
+        },
+        {
+          "file": "libs/util/hooks/keys.ts",
+          "hash": "15976907566512513771"
+        },
+        {
+          "file": "libs/util/hooks/location.ts",
+          "hash": "8129724174922047971"
+        },
+        {
+          "file": "libs/util/hooks/pagination.ts",
+          "hash": "11526730109641553586"
+        },
+        {
+          "file": "libs/util/hooks/price.ts",
+          "hash": "8691826196305781718"
+        },
+        {
+          "file": "libs/util/index.ts",
+          "hash": "10876176631037004134"
+        },
+        {
+          "file": "libs/util/package.json",
+          "hash": "2947776056596837456"
+        },
+        {
+          "file": "libs/util/tsconfig.json",
+          "hash": "9617126365741353194"
+        },
+        {
+          "file": "libs/util/types.ts",
+          "hash": "6217669834358572036"
+        }
+      ],
+      "@parkify/web": [
+        {
+          "file": "apps/web/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "apps/web/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "apps/web/next.config.mjs",
+          "hash": "16492501828799852533"
+        },
+        {
+          "file": "apps/web/package.json",
+          "hash": "7405592705371191373",
+          "deps": [
+            "@parkify/network",
+            "@parkify/sample-lib",
+            "@parkify/ui"
+          ]
+        },
+        {
+          "file": "apps/web/postcss.config.js",
+          "hash": "1579725330904862112"
+        },
+        {
+          "file": "apps/web/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/web/public/user.png",
+          "hash": "16941821795138000203"
+        },
+        {
+          "file": "apps/web/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "apps/web/src/app/api/auth/[...nextauth]/route.ts",
+          "hash": "7366840909368449911"
+        },
+        {
+          "file": "apps/web/src/app/api/auth/token/route.ts",
+          "hash": "16938433310170514210"
+        },
+        {
+          "file": "apps/web/src/app/booking-failed/page.tsx",
+          "hash": "5756970316770711288"
+        },
+        {
+          "file": "apps/web/src/app/bookings/page.tsx",
+          "hash": "11860278803847938150"
+        },
+        {
+          "file": "apps/web/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/web/src/app/layout.tsx",
+          "hash": "8116223516847443951"
+        },
+        {
+          "file": "apps/web/src/app/login/page.tsx",
+          "hash": "3100909399507413507"
+        },
+        {
+          "file": "apps/web/src/app/page.tsx",
+          "hash": "894307962361344407"
+        },
+        {
+          "file": "apps/web/src/app/register/page.tsx",
+          "hash": "14153439251707408870"
+        },
+        {
+          "file": "apps/web/src/app/search/page.tsx",
+          "hash": "14136922446467475706"
+        },
+        {
+          "file": "apps/web/tailwind.config.ts",
+          "hash": "16967495277415250122"
+        },
+        {
+          "file": "apps/web/tsconfig.json",
+          "hash": "4320684160905164141"
+        },
+        {
+          "file": "apps/web/types.d.ts",
+          "hash": "12936221474557794499"
+        }
+      ],
+      "@parkify/3d": [
+        {
+          "file": "libs/3d/package.json",
+          "hash": "6604474631031666341"
+        },
+        {
+          "file": "libs/3d/src/components/BlinkingParkingSlot.tsx",
+          "hash": "3270535272156178493"
+        },
+        {
+          "file": "libs/3d/src/components/Building.tsx",
+          "hash": "10780052587746128144"
+        },
+        {
+          "file": "libs/3d/src/components/BuildingSet.tsx",
+          "hash": "9220712103568802316"
+        },
+        {
+          "file": "libs/3d/src/components/Car.tsx",
+          "hash": "15521446496890279373"
+        },
+        {
+          "file": "libs/3d/src/components/GradientPlane.tsx",
+          "hash": "18144638419377670538"
+        },
+        {
+          "file": "libs/3d/src/components/Spawner.tsx",
+          "hash": "17058704147012211229"
+        },
+        {
+          "file": "libs/3d/src/components/Square.tsx",
+          "hash": "8215649860254108956"
+        },
+        {
+          "file": "libs/3d/src/components/camera/Rotating.tsx",
+          "hash": "15097619297097849792"
+        },
+        {
+          "file": "libs/3d/src/scenes/CarScene.tsx",
+          "hash": "205021582556644274"
+        },
+        {
+          "file": "libs/3d/src/util/buildingSets.ts",
+          "hash": "4501932588448906160"
+        },
+        {
+          "file": "libs/3d/src/util/comments.ts",
+          "hash": "10032765048416750873"
+        },
+        {
+          "file": "libs/3d/src/util/constants.ts",
+          "hash": "3280899539837210394"
+        },
+        {
+          "file": "libs/3d/src/util/index.ts",
+          "hash": "1502387692670933056"
+        },
+        {
+          "file": "libs/3d/src/util/types.ts",
+          "hash": "11433595376616304968"
+        },
+        {
+          "file": "libs/3d/tsconfig.json",
+          "hash": "12053352178282715962"
+        }
+      ],
+      "@parkify/ui": [
+        {
+          "file": "libs/ui/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "libs/ui/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "libs/ui/README.md",
+          "hash": "12205685531602560652"
+        },
+        {
+          "file": "libs/ui/next.config.mjs",
+          "hash": "6567081978241091914"
+        },
+        {
+          "file": "libs/ui/package.json",
+          "hash": "15261780351058056597",
+          "deps": [
+            "@parkify/forms",
+            "@parkify/util"
+          ]
+        },
+        {
+          "file": "libs/ui/postcss.config.mjs",
+          "hash": "2557392112968376575"
+        },
+        {
+          "file": "libs/ui/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "libs/ui/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "libs/ui/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "libs/ui/src/app/globals.css",
+          "hash": "4373633570948102299"
+        },
+        {
+          "file": "libs/ui/src/app/layout.tsx",
+          "hash": "1552691733234398668"
+        },
+        {
+          "file": "libs/ui/src/app/page.tsx",
+          "hash": "13466907520039826798"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Accordion.tsx",
+          "hash": "6063238647765754052"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Autocomplete.tsx",
+          "hash": "2631273026340901042"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Badge.tsx",
+          "hash": "792319985801024016"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Brand.tsx",
+          "hash": "16044044951993268230"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/BrandIcon.tsx",
+          "hash": "13039478846877273598"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Button.tsx",
+          "hash": "3058395411529632450"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Container.tsx",
+          "hash": "11773865927790994091"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Dialog.tsx",
+          "hash": "1148220913378347772"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Dot.tsx",
+          "hash": "7909174946231619545"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Form.tsx",
+          "hash": "10119814195183772647"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/FormError.tsx",
+          "hash": "9734022425772391576"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/HtmlInput.tsx",
+          "hash": "4269163392476547267"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/HtmlLabel.tsx",
+          "hash": "15611936887369854455"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/HtmlSelect.tsx",
+          "hash": "14142692125219862969"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/HtmlTextArea.tsx",
+          "hash": "7345112779996205483"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/ParkingIcon.tsx",
+          "hash": "5034911977287356336"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/Switch.tsx",
+          "hash": "3710381669983231874"
+        },
+        {
+          "file": "libs/ui/src/components/atoms/TitleValue.tsx",
+          "hash": "520409838831200903"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/AlertSection.tsx",
+          "hash": "14957318417879207971"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/AuthLayout.tsx",
+          "hash": "7622812936297882838"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/CostTitleValue.tsx",
+          "hash": "6630150449765013198"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/DateRangeBookingInfo.tsx",
+          "hash": "11931222808320898487"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/FilterHeading.tsx",
+          "hash": "6857276331358525293"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/GoogleButton.tsx",
+          "hash": "13310413121368364104"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/IconTypes.tsx",
+          "hash": "10343283333327478776"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/Loader.tsx",
+          "hash": "18192110550002916293"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/LogoutButton.tsx",
+          "hash": "10443980874709706752"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/MapLink.tsx",
+          "hash": "4289179218512879731"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/NoResults.tsx",
+          "hash": "12474035433645153635"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/RangeSlider.tsx",
+          "hash": "2507269581306645512"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/Reveal.tsx",
+          "hash": "5706606985549039566"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/SessionProvider.tsx",
+          "hash": "8801271450817633589"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/Tabs.tsx",
+          "hash": "16802195101022231858"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/Toast.tsx",
+          "hash": "7753316203682286756"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/ToggleButtonGroup.tsx",
+          "hash": "7891413002883297058"
+        },
+        {
+          "file": "libs/ui/src/components/molecules/UserInfo.tsx",
+          "hash": "14384339658106482647"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/AddValet.tsx",
+          "hash": "15990810928533172248"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/AssignValetButton.tsx",
+          "hash": "314402895672566622"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/AutoImageChanger.tsx",
+          "hash": "14602262845627468291"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/BookSlotPopup.tsx",
+          "hash": "8478759631685073674"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/CheckInOutButtons.tsx",
+          "hash": "6633442558062540447"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/CreateCompany.tsx",
+          "hash": "10440496827684408198"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/CreateGarageComponents.tsx",
+          "hash": "9818352692196543316"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/CreateManySlotsDialog.tsx",
+          "hash": "17904571695646675128"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/CustomerBookingCard.tsx",
+          "hash": "7976506957634060887"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/DateCard.tsx",
+          "hash": "5371730919503969016"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/Directions.tsx",
+          "hash": "17474801752786363797"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/GarageAdminCard.tsx",
+          "hash": "8235665475224942739"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/GarageCard.tsx",
+          "hash": "5518359500796374242"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/Header.tsx",
+          "hash": "6348120576353487094"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ImagePreview.tsx",
+          "hash": "2401029901175215192"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/IsAdmin.tsx",
+          "hash": "17012771324013971374"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/IsLoggedIn.tsx",
+          "hash": "7479176197768803147"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/IsManager.tsx",
+          "hash": "3959992658529839973"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/IsValet.tsx",
+          "hash": "3372757723967200941"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ListGarages.tsx",
+          "hash": "4282491720418711687"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ListValets.tsx",
+          "hash": "9800449650506727"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ManageBookingCard.tsx",
+          "hash": "6308767931272229837"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ManageValets.tsx",
+          "hash": "9130546265686424456"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/Menus.tsx",
+          "hash": "11521921771143888518"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/NavSidebar.tsx",
+          "hash": "3424047355972042891"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ShowCustomerBookings.tsx",
+          "hash": "3204927299455268071"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ShowData.tsx",
+          "hash": "2453915468921820907"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ShowGarageBookings.tsx",
+          "hash": "16057976244521510202"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ShowValetAllDropTrips.tsx",
+          "hash": "18231878310249294963"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ShowValetAllPickupTrips.tsx",
+          "hash": "6669721923142511438"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ShowValetMyDropTrips.tsx",
+          "hash": "14757554880486250407"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ShowValetMyPickupTrips.tsx",
+          "hash": "11420367810090728556"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/Sidebar.tsx",
+          "hash": "3282392160309616611"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ValetCard.tsx",
+          "hash": "5978477473660408138"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/ValetTripCard.tsx",
+          "hash": "3226812243879481404"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/admin/AdminCard.tsx",
+          "hash": "14799393440911984910"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/admin/CreateAdmin.tsx",
+          "hash": "15273138979034652056"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/admin/CreateVerificationButton.tsx",
+          "hash": "171917817239379153"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/admin/RemoveAdminButton.tsx",
+          "hash": "9936764804478043972"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/admin/RemoveVerificationButton.tsx",
+          "hash": "12483622284835815533"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/map/CurrentLocationButton.tsx",
+          "hash": "8923651528552190697"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/map/Map.tsx",
+          "hash": "11431176841453888863"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/map/MapMarker.tsx",
+          "hash": "10577167791065958650"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/map/Panel.tsx",
+          "hash": "17547295360249551735"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/map/SearchPlacesBox.tsx",
+          "hash": "14741791176104634248"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/map/StaticMapDirections.tsx",
+          "hash": "5042787912868009928"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/map/StaticMapSimple.tsx",
+          "hash": "12917801408661969323"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/map/ZoomControls.tsx",
+          "hash": "14292658393930022187"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/map/map.css",
+          "hash": "16693969329368869365"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/search/FilterSidebar.tsx",
+          "hash": "4033285335918921098"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/search/GarageMarker.tsx",
+          "hash": "17478778626605944282"
+        },
+        {
+          "file": "libs/ui/src/components/organisms/search/ShowGarages.tsx",
+          "hash": "3678743653244629050"
+        },
+        {
+          "file": "libs/ui/src/components/templates/AdminHome.tsx",
+          "hash": "1066621461806048627"
+        },
+        {
+          "file": "libs/ui/src/components/templates/CreateGarage.tsx",
+          "hash": "11721030118122796616"
+        },
+        {
+          "file": "libs/ui/src/components/templates/ListCustomerBookings.tsx",
+          "hash": "2689971087976137728"
+        },
+        {
+          "file": "libs/ui/src/components/templates/ListGarageBookings.tsx",
+          "hash": "8984135884267391961"
+        },
+        {
+          "file": "libs/ui/src/components/templates/LoginForm.tsx",
+          "hash": "4025347128115076804"
+        },
+        {
+          "file": "libs/ui/src/components/templates/ManageAdmins.tsx",
+          "hash": "18332132040413282631"
+        },
+        {
+          "file": "libs/ui/src/components/templates/ManageValets.tsx",
+          "hash": "4699193536089454582"
+        },
+        {
+          "file": "libs/ui/src/components/templates/RegisterForm.tsx",
+          "hash": "223484958797412386"
+        },
+        {
+          "file": "libs/ui/src/components/templates/SearchPage.tsx",
+          "hash": "1422581289702710953"
+        },
+        {
+          "file": "libs/ui/src/components/templates/ValetHome.tsx",
+          "hash": "8600775559216774157"
+        },
+        {
+          "file": "libs/ui/src/components/templates/ValetTrips.tsx",
+          "hash": "11637765931646281924"
+        },
+        {
+          "file": "libs/ui/src/styles/config.js",
+          "hash": "8324048331580989744"
+        },
+        {
+          "file": "libs/ui/tailwind.config.ts",
+          "hash": "2544258114199104624"
+        },
+        {
+          "file": "libs/ui/tsconfig.json",
+          "hash": "12090993031857468561"
+        },
+        {
+          "file": "libs/ui/types.d.ts",
+          "hash": "12936221474557794499"
+        }
+      ],
+      "@parkify/web-valet": [
+        {
+          "file": "apps/web-valet/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "apps/web-valet/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "apps/web-valet/next.config.mjs",
+          "hash": "16492501828799852533"
+        },
+        {
+          "file": "apps/web-valet/package.json",
+          "hash": "9448958204634842837"
+        },
+        {
+          "file": "apps/web-valet/postcss.config.mjs",
+          "hash": "2557392112968376575"
+        },
+        {
+          "file": "apps/web-valet/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/web-valet/public/user.png",
+          "hash": "16941821795138000203"
+        },
+        {
+          "file": "apps/web-valet/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "apps/web-valet/src/app/api/auth/[...nextauth]/route.ts",
+          "hash": "7366840909368449911"
+        },
+        {
+          "file": "apps/web-valet/src/app/api/auth/token/route.ts",
+          "hash": "16938433310170514210"
+        },
+        {
+          "file": "apps/web-valet/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/web-valet/src/app/layout.tsx",
+          "hash": "12866443535016014173"
+        },
+        {
+          "file": "apps/web-valet/src/app/login/page.tsx",
+          "hash": "3100909399507413507"
+        },
+        {
+          "file": "apps/web-valet/src/app/my-trips/page.tsx",
+          "hash": "17695002291951234052"
+        },
+        {
+          "file": "apps/web-valet/src/app/page.tsx",
+          "hash": "12031221915703315879"
+        },
+        {
+          "file": "apps/web-valet/src/app/register/page.tsx",
+          "hash": "14153439251707408870"
+        },
+        {
+          "file": "apps/web-valet/tailwind.config.ts",
+          "hash": "16967495277415250122"
+        },
+        {
+          "file": "apps/web-valet/tsconfig.json",
+          "hash": "4320684160905164141"
+        },
+        {
+          "file": "apps/web-valet/types.d.ts",
+          "hash": "12936221474557794499"
+        }
+      ],
+      "@parkify/sample-lib": [
+        {
+          "file": "libs/sample-lib/index.ts",
+          "hash": "16729261508988592546"
+        },
+        {
+          "file": "libs/sample-lib/package.json",
+          "hash": "548766380398334333"
+        },
+        {
+          "file": "libs/sample-lib/tsconfig.json",
+          "hash": "14590710882709848906"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".gitignore",
+        "hash": "17019654293573628040"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "14193209146131028710"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "15324714788084809874"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4883124491158709683"
+      },
+      {
+        "file": "package.json",
+        "hash": "3676623109884716032"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "1527717912508394059"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "18319316846169594004"
+      }
+    ]
+  }
+}

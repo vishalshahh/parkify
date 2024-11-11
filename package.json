@@ -1,0 +1,47 @@
+{
+  "name": "parkify",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "libs/*"
+    ],
+    "nohoist": [
+      "**/@nestjs",
+      "**/@nestjs/**"
+    ]
+  },
+  "scripts": {
+    "dev:all": "npm-run-all --parallel dev:api dev:web dev:web-admin dev:web-valet dev:web-manager dev:network dev:studio",
+    "dev:api": "cd apps/api && yarn dev",
+    "dev:web": "cd apps/web && yarn dev",
+    "dev:web-admin": "cd apps/web-admin && yarn dev",
+    "dev:web-valet": "cd apps/web-valet && yarn dev",
+    "dev:web-manager": "cd apps/web-manager && yarn dev",
+    "dev:network": "cd libs/network && yarn codegen",
+    "dev:studio": "cd apps/api && yarn prisma studio",
+    "install:all": "cd apps/api && yarn install && cd ../web && yarn install && cd ../web-admin && yarn install && cd ../web-valet && yarn install && cd ../web-manager && yarn install && cd ../../libs/3d && yarn install && cd ../ui && yarn install && cd ../util && yarn install && cd ../forms && yarn install && cd ../network && yarn install && cd ../sample-lib && yarn install",
+    "format": "prettier  \"{apps,libs}/**/*.{ts,tsx,js,json}\" --ignore-path .gitignore",
+    "format:check": "yarn format --check",
+    "format:write": "yarn format --write",
+    "tsc": "yarn nx run-many -t tsc",
+    "lint": "yarn nx run-many -t lint",
+    "build": "yarn nx run-many -t build",
+    "validate": "yarn format:write && yarn tsc && yarn lint && yarn build",
+    "prepare": "husky install",
+    "cloc": "npx cloc --exclude-dir=node_modules,dist,build,yarn.lock,package.json,generated.tsx,.next,.nx ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "husky": "^8.0.0",
+    "npm-run-all": "^4.1.5",
+    "nx": "19.8.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.6.3"
+  }
+}

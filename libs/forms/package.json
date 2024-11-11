@@ -1,0 +1,11 @@
+{
+  "name": "@parkify/forms",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "react-hook-form": "^7.51.4",
+    "zod": "^3.23.6"
+  }
+}
