@@ -2557,3 +2557,25 @@
 
 > NX runtime error err=cannot send event from fs watcher: sending into a closed channel
 
+[NX Daemon Server] - 2025-07-24T12:27:29.125Z - Started listening on: /tmp/3db4e8f94086f83d6524/d.sock
+[NX Daemon Server] - 2025-07-24T12:27:29.128Z - [WATCHER]: Subscribed to changes within: /home/vishal/developer/parkify (native)
+[NX Daemon Server] - 2025-07-24T12:27:29.131Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-07-24T12:27:29.133Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-07-24T12:27:29.135Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-07-24T12:27:29.139Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2025-07-24T12:27:29.139Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2025-07-24T12:27:29.140Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2025-07-24T12:27:29.141Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-07-24T12:27:29.141Z - [WATCHER]: Stopping the watcher for /home/vishal/developer/parkify (sources)
+[NX Daemon Server] - 2025-07-24T12:27:29.142Z - [WATCHER]: Stopping the watcher for /home/vishal/developer/parkify (outputs)
+[NX Daemon Server] - 2025-07-24T12:35:09.215Z - Started listening on: /tmp/3db4e8f94086f83d6524/d.sock
+[NX Daemon Server] - 2025-07-24T12:35:09.218Z - [WATCHER]: Subscribed to changes within: /home/vishal/developer/parkify (native)
+[NX Daemon Server] - 2025-07-24T12:35:09.221Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-07-24T12:35:09.222Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-07-24T12:35:09.226Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-07-24T12:35:09.229Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2025-07-24T12:35:09.230Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2025-07-24T12:35:09.230Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2025-07-24T12:35:09.231Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-07-24T12:35:09.232Z - [WATCHER]: Stopping the watcher for /home/vishal/developer/parkify (sources)
+[NX Daemon Server] - 2025-07-24T12:35:09.232Z - [WATCHER]: Stopping the watcher for /home/vishal/developer/parkify (outputs)

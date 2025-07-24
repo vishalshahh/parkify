@@ -9,6 +9,10 @@
     "lint": "next lint",
     "tsc": "tsc --noEmit"
   },
+  "engines": {
+    "node": "20.9.0",
+    "npm": ">=10.0.0"
+  },
   "dependencies": {
     "@parkify/network": "*",
     "@parkify/sample-lib": "*",
@@ -20,7 +24,7 @@
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.9.0",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
