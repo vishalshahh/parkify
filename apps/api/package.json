@@ -27,7 +27,7 @@
     "seed": "ts-node prisma/seed/index.ts"
   },
   "engines": {
-    "node": "20.9.0",
+    "node": "20.x",
     "npm": ">=10.0.0"
   },
   "dependencies": {
