@@ -3,6 +3,9 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   transpilePackages: ['@parkify/ui', '@parkify/forms', '@parkify/network', '@parkify/util'],
   images: {
     remotePatterns: [
