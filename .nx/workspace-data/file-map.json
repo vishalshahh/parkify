@@ -14,16 +14,24 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "package.json",
-        "hash": "11562567812256847848"
-      },
-      {
         "file": "tsconfig.json",
         "hash": "1527717912508394059"
       },
       {
+        "file": ".prettierrc",
+        "hash": "15324714788084809874"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "5705511160647073979"
+      },
+      {
         "file": ".husky/pre-commit",
         "hash": "14193209146131028710"
+      },
+      {
+        "file": "package.json",
+        "hash": "11562567812256847848"
       },
       {
         "file": "nx.json",
@@ -34,16 +42,8 @@
         "hash": "387456270893314316"
       },
       {
-        "file": ".prettierrc",
-        "hash": "15324714788084809874"
-      },
-      {
         "file": ".gitignore",
         "hash": "17019654293573628040"
-      },
-      {
-        "file": ".nvmrc",
-        "hash": "12682565354838973572"
       }
     ],
     "projectFileMap": {
@@ -72,7 +72,7 @@
         },
         {
           "file": "apps/web-admin/next.config.mjs",
-          "hash": "16492501828799852533"
+          "hash": "18200716099934872004"
         },
         {
           "file": "apps/web-admin/package.json",
@@ -121,7 +121,7 @@
         },
         {
           "file": "apps/web-admin/src/app/layout.tsx",
-          "hash": "14749164271760344159"
+          "hash": "8819658175758933688"
         },
         {
           "file": "apps/web-admin/src/app/login/page.tsx",
@@ -1834,7 +1834,7 @@
         },
         {
           "file": "apps/web-manager/next.config.mjs",
-          "hash": "16492501828799852533"
+          "hash": "18200716099934872004"
         },
         {
           "file": "apps/web-manager/package.json",
@@ -1891,7 +1891,7 @@
         },
         {
           "file": "apps/web-manager/src/app/layout.tsx",
-          "hash": "14744261133593130585"
+          "hash": "5538149931175146661"
         },
         {
           "file": "apps/web-manager/src/app/login/page.tsx",
@@ -1937,7 +1937,7 @@
         },
         {
           "file": "apps/web-valet/next.config.mjs",
-          "hash": "16492501828799852533"
+          "hash": "18200716099934872004"
         },
         {
           "file": "apps/web-valet/package.json",
@@ -1986,7 +1986,7 @@
         },
         {
           "file": "apps/web-valet/src/app/layout.tsx",
-          "hash": "12866443535016014173"
+          "hash": "7609655103604243569"
         },
         {
           "file": "apps/web-valet/src/app/login/page.tsx",
