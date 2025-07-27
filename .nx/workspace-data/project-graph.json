@@ -756,7 +756,7 @@
               "script": "build"
             },
             "metadata": {
-              "scriptContent": "next build",
+              "scriptContent": "yarn install --ignore-engines && next build",
               "runCommand": "yarn build"
             },
             "configurations": {},
@@ -14780,27 +14780,12 @@
       },
       {
         "source": "@parkify/web",
-        "target": "npm:autoprefixer",
-        "type": "static"
-      },
-      {
-        "source": "@parkify/web",
         "target": "npm:eslint",
         "type": "static"
       },
       {
         "source": "@parkify/web",
         "target": "npm:eslint-config-next@14.1.4",
-        "type": "static"
-      },
-      {
-        "source": "@parkify/web",
-        "target": "npm:postcss",
-        "type": "static"
-      },
-      {
-        "source": "@parkify/web",
-        "target": "npm:tailwindcss",
         "type": "static"
       },
       {
@@ -14830,6 +14815,11 @@
       },
       {
         "source": "@parkify/web",
+        "target": "npm:autoprefixer",
+        "type": "static"
+      },
+      {
+        "source": "@parkify/web",
         "target": "npm:next@14.1.4",
         "type": "static"
       },
@@ -14840,12 +14830,22 @@
       },
       {
         "source": "@parkify/web",
+        "target": "npm:postcss",
+        "type": "static"
+      },
+      {
+        "source": "@parkify/web",
         "target": "npm:react",
         "type": "static"
       },
       {
         "source": "@parkify/web",
         "target": "npm:react-dom",
+        "type": "static"
+      },
+      {
+        "source": "@parkify/web",
+        "target": "npm:tailwindcss",
         "type": "static"
       }
     ],
