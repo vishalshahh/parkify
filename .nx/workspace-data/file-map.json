@@ -3,10 +3,13 @@
   "nxVersion": "19.8.0",
   "deps": {
     "@types/node": "^20.9.0",
+    "autoprefixer": "^10.0.1",
     "husky": "^8.0.0",
     "npm-run-all": "^4.1.5",
     "nx": "19.8.0",
+    "postcss": "^8",
     "prettier": "^3.0.0",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.6.3"
   },
   "pathMappings": {},
@@ -14,36 +17,40 @@
   "fileMap": {
     "nonProjectFiles": [
       {
+        "file": "nx.json",
+        "hash": "4883124491158709683"
+      },
+      {
         "file": "tsconfig.json",
         "hash": "1527717912508394059"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "15324714788084809874"
-      },
-      {
-        "file": ".nvmrc",
-        "hash": "5705511160647073979"
       },
       {
         "file": ".husky/pre-commit",
         "hash": "14193209146131028710"
       },
       {
-        "file": "package.json",
-        "hash": "11562567812256847848"
-      },
-      {
-        "file": "nx.json",
-        "hash": "4883124491158709683"
+        "file": ".prettierrc",
+        "hash": "15324714788084809874"
       },
       {
         "file": "yarn.lock",
         "hash": "387456270893314316"
       },
       {
+        "file": ".nvmrc",
+        "hash": "5705511160647073979"
+      },
+      {
+        "file": "package.json",
+        "hash": "6901247166077481678"
+      },
+      {
         "file": ".gitignore",
         "hash": "17019654293573628040"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "11904480606157745632"
       }
     ],
     "projectFileMap": {
@@ -1660,7 +1667,7 @@
         },
         {
           "file": "apps/web/next.config.mjs",
-          "hash": "16492501828799852533"
+          "hash": "8546904376813426725"
         },
         {
           "file": "apps/web/package.json",
