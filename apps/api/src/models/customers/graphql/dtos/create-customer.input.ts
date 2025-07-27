@@ -10,16 +10,16 @@ export class CreateCustomerInput extends PickType(
   // Optional address fields
   @Field({ nullable: true })
   addressLine1?: string
-  
+
   @Field({ nullable: true })
   city?: string
-  
+
   @Field({ nullable: true })
   state?: string
-  
+
   @Field({ nullable: true })
   postalCode?: string
-  
+
   @Field({ nullable: true })
   country?: string
 }

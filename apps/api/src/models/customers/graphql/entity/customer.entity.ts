@@ -9,7 +9,7 @@ export class Customer implements RestrictProperties<Customer, CustomerType> {
   updatedAt: Date
   @Field({ nullable: true })
   displayName: string
-  
+
   // New address fields
   @Field({ nullable: true })
   addressLine1: string

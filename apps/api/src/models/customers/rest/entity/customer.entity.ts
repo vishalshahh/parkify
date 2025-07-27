@@ -10,7 +10,7 @@ export class CustomerEntity
   updatedAt: Date
   @IsOptional()
   displayName: string
-  
+
   // New address fields
   @IsOptional()
   @IsString()

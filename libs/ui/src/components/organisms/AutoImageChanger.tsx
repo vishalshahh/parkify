@@ -4,6 +4,7 @@ import {
   IconChevronLeft,
   IconChevronRight,
 } from '@tabler/icons-react'
+import Image from 'next/image'
 
 export interface IAutoImageChangerProps {
   images: string[]
@@ -28,7 +29,7 @@ export const AutoImageChanger = ({
     }, durationPerImage)
 
     return () => clearInterval(interval)
-  }, [durationPerImage, images])
+  }, [durationPerImage, images, noAutoChange])
 
   if (images.length === 0)
     return (
@@ -39,10 +40,12 @@ export const AutoImageChanger = ({
 
   return (
     <div className={`relative w-full overflow-hidden ${aspectRatio}`}>
-      <img
+      <Image
         src={images[currentImageIndex]}
         alt="Garage"
         className="object-cover h-full w-full"
+        fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
       />
       <div className="absolute bottom-0 left-0 right-0 flex justify-center p-1 space-x-2">
         {images.map((_, index) => (

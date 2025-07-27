@@ -15,7 +15,7 @@ const getDefaultLocationFilter = () => {
   // Create bounds roughly 0.02 degrees (~2km) in each direction from center
   const latOffset = 0.02
   const lngOffset = 0.02
-  
+
   return {
     ne_lat: latitude + latOffset,
     ne_lng: longitude + lngOffset,

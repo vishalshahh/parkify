@@ -27,29 +27,30 @@ const imageUrls = [
 ]
 
 // Helper function to get random image
-const getRandomImage = () => imageUrls[Math.floor(Math.random() * imageUrls.length)]
+const getRandomImage = () =>
+  imageUrls[Math.floor(Math.random() * imageUrls.length)]
 
 // Helper function to get random slot types
 const getRandomSlots = () => {
   const slotTypes = ['BIKE', 'CAR', 'BICYCLE', 'HEAVY']
   const numTypes = Math.floor(Math.random() * 3) + 1 // 1-3 types
   const selectedTypes = []
-  
+
   for (let i = 0; i < numTypes; i++) {
     const randomType = slotTypes[Math.floor(Math.random() * slotTypes.length)]
     if (!selectedTypes.includes(randomType)) {
       selectedTypes.push(randomType)
     }
   }
-  
-  return selectedTypes.map(type => generateSlots({ type })).flat()
+
+  return selectedTypes.map((type) => generateSlots({ type })).flat()
 }
 
 // Greater Noida Garages
 export const greaterNoidaGarages: Prisma.GarageCreateInput[] = [
   {
     displayName: 'Alpha 1 Commercial Complex',
-    description: 'Modern parking facility in Greater Noida\'s commercial hub',
+    description: "Modern parking facility in Greater Noida's commercial hub",
     Company: { connect: { id: 1 } },
     images: { set: [getRandomImage()] },
     Slots: { create: getRandomSlots() },
@@ -85,7 +86,7 @@ export const greaterNoidaGarages: Prisma.GarageCreateInput[] = [
       create: {
         address: 'Gamma 1, Greater Noida, Uttar Pradesh 201310, India',
         lat: 28.4689,
-        lng: 77.4950,
+        lng: 77.495,
       },
     },
   },
@@ -112,8 +113,8 @@ export const greaterNoidaGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Techzone 4, Greater Noida, Uttar Pradesh 201310, India',
-        lat: 28.4650,
-        lng: 77.4890,
+        lat: 28.465,
+        lng: 77.489,
       },
     },
   },
@@ -126,8 +127,8 @@ export const greaterNoidaGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Omicron 1, Greater Noida, Uttar Pradesh 201308, India',
-        lat: 28.4890,
-        lng: 77.5140,
+        lat: 28.489,
+        lng: 77.514,
       },
     },
   },
@@ -140,8 +141,8 @@ export const greaterNoidaGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Pari Chowk, Greater Noida, Uttar Pradesh 201310, India',
-        lat: 28.4720,
-        lng: 77.5020,
+        lat: 28.472,
+        lng: 77.502,
       },
     },
   },
@@ -154,8 +155,8 @@ export const greaterNoidaGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Knowledge Park 2, Greater Noida, Uttar Pradesh 201306, India',
-        lat: 28.4610,
-        lng: 77.4850,
+        lat: 28.461,
+        lng: 77.485,
       },
     },
   },
@@ -168,8 +169,8 @@ export const greaterNoidaGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Surajpur, Greater Noida, Uttar Pradesh 201306, India',
-        lat: 28.4950,
-        lng: 77.5180,
+        lat: 28.495,
+        lng: 77.518,
       },
     },
   },
@@ -181,9 +182,10 @@ export const greaterNoidaGarages: Prisma.GarageCreateInput[] = [
     Slots: { create: getRandomSlots() },
     Address: {
       create: {
-        address: 'Ecotech Extension 1, Greater Noida, Uttar Pradesh 201308, India',
-        lat: 28.4580,
-        lng: 77.4920,
+        address:
+          'Ecotech Extension 1, Greater Noida, Uttar Pradesh 201308, India',
+        lat: 28.458,
+        lng: 77.492,
       },
     },
   },
@@ -193,7 +195,7 @@ export const greaterNoidaGarages: Prisma.GarageCreateInput[] = [
 export const newDelhiGarages: Prisma.GarageCreateInput[] = [
   {
     displayName: 'Connaught Place Central',
-    description: 'Premium parking in Delhi\'s commercial heart',
+    description: "Premium parking in Delhi's commercial heart",
     Company: { connect: { id: 1 } },
     images: { set: [getRandomImage()] },
     Slots: { create: getRandomSlots() },
@@ -351,7 +353,7 @@ export const londonGarages: Prisma.GarageCreateInput[] = [
   },
   {
     displayName: 'Camden Market Garage',
-    description: 'Convenient parking near Camden Market and Regent\'s Park',
+    description: "Convenient parking near Camden Market and Regent's Park",
     Company: { connect: { id: 1 } },
     images: { set: [getRandomImage()] },
     Slots: { create: getRandomSlots() },
@@ -373,13 +375,13 @@ export const londonGarages: Prisma.GarageCreateInput[] = [
       create: {
         address: '78 Kensington High Street, Kensington, London W8 4PE, UK',
         lat: 51.5019,
-        lng: -0.1910,
+        lng: -0.191,
       },
     },
   },
   {
     displayName: 'Canary Wharf Business Centre',
-    description: 'Modern parking facility in London\'s financial district',
+    description: "Modern parking facility in London's financial district",
     Company: { connect: { id: 1 } },
     images: { set: [getRandomImage()] },
     Slots: { create: getRandomSlots() },
@@ -407,7 +409,8 @@ export const londonGarages: Prisma.GarageCreateInput[] = [
   },
   {
     displayName: 'Greenwich Maritime Garage',
-    description: 'Historic parking near Greenwich Observatory and Maritime Museum',
+    description:
+      'Historic parking near Greenwich Observatory and Maritime Museum',
     Company: { connect: { id: 1 } },
     images: { set: [getRandomImage()] },
     Slots: { create: getRandomSlots() },
@@ -421,15 +424,15 @@ export const londonGarages: Prisma.GarageCreateInput[] = [
   },
   {
     displayName: 'Clapham Junction Station Garage',
-    description: 'Convenient parking near London\'s busiest railway station',
+    description: "Convenient parking near London's busiest railway station",
     Company: { connect: { id: 1 } },
     images: { set: [getRandomImage()] },
     Slots: { create: getRandomSlots() },
     Address: {
       create: {
-        address: '34 St John\'s Hill, Clapham Junction, London SW11 1SA, UK',
+        address: "34 St John's Hill, Clapham Junction, London SW11 1SA, UK",
         lat: 51.4642,
-        lng: -0.1700,
+        lng: -0.17,
       },
     },
   },
@@ -481,7 +484,7 @@ export const londonGarages: Prisma.GarageCreateInput[] = [
 export const parisGarages: Prisma.GarageCreateInput[] = [
   {
     displayName: 'Champs-Élysées Premium',
-    description: 'Luxury parking on the world\'s most famous avenue',
+    description: "Luxury parking on the world's most famous avenue",
     Company: { connect: { id: 1 } },
     images: { set: [getRandomImage()] },
     Slots: { create: getRandomSlots() },
@@ -502,7 +505,7 @@ export const parisGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: '45 Rue de Rivoli, 75004 Paris, France',
-        lat: 48.8570,
+        lat: 48.857,
         lng: 2.3537,
       },
     },
@@ -572,7 +575,7 @@ export const parisGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: '1 Place du Trocadéro, 75016 Paris, France',
-        lat: 48.8630,
+        lat: 48.863,
         lng: 2.2876,
       },
     },
@@ -660,7 +663,7 @@ export const berlinGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Oranienstraße 45, 10969 Berlin, Germany',
-        lat: 52.5020,
+        lat: 52.502,
         lng: 13.4178,
       },
     },
@@ -758,7 +761,7 @@ export const berlinGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Unter den Linden 45, 10117 Berlin, Germany',
-        lat: 52.5170,
+        lat: 52.517,
         lng: 13.3888,
       },
     },
@@ -818,7 +821,7 @@ export const sydneyGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Darling Dr, Darling Harbour NSW 2000, Australia',
-        lat: -33.8740,
+        lat: -33.874,
         lng: 151.1982,
       },
     },
@@ -833,7 +836,7 @@ export const sydneyGarages: Prisma.GarageCreateInput[] = [
       create: {
         address: 'George St, The Rocks NSW 2000, Australia',
         lat: -33.8599,
-        lng: 151.2090,
+        lng: 151.209,
       },
     },
   },
@@ -875,7 +878,7 @@ export const sydneyGarages: Prisma.GarageCreateInput[] = [
       create: {
         address: 'The Corso, Manly NSW 2095, Australia',
         lat: -33.7969,
-        lng: 151.2840,
+        lng: 151.284,
       },
     },
   },
@@ -949,7 +952,7 @@ export const ghaziabadGarages: Prisma.GarageCreateInput[] = [
       create: {
         address: 'Vaishali, Ghaziabad, Uttar Pradesh 201012, India',
         lat: 28.6507,
-        lng: 77.3340,
+        lng: 77.334,
       },
     },
   },
@@ -1018,7 +1021,7 @@ export const ghaziabadGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Govindpuram, Ghaziabad, Uttar Pradesh 201013, India',
-        lat: 28.6890,
+        lat: 28.689,
         lng: 77.4234,
       },
     },
@@ -1045,7 +1048,8 @@ export const ghaziabadGarages: Prisma.GarageCreateInput[] = [
     Slots: { create: getRandomSlots() },
     Address: {
       create: {
-        address: 'Shipra Path, Indirapuram, Ghaziabad, Uttar Pradesh 201014, India',
+        address:
+          'Shipra Path, Indirapuram, Ghaziabad, Uttar Pradesh 201014, India',
         lat: 28.6423,
         lng: 77.3789,
       },
@@ -1107,7 +1111,7 @@ export const noidaGarages: Prisma.GarageCreateInput[] = [
       create: {
         address: 'Sector 18, Noida, Uttar Pradesh 201301, India',
         lat: 28.5704,
-        lng: 77.3210,
+        lng: 77.321,
       },
     },
   },
@@ -1523,7 +1527,8 @@ export const chennaiGarages: Prisma.GarageCreateInput[] = [
     Slots: { create: getRandomSlots() },
     Address: {
       create: {
-        address: 'Express Avenue, Royapettah, Chennai, Tamil Nadu 600014, India',
+        address:
+          'Express Avenue, Royapettah, Chennai, Tamil Nadu 600014, India',
         lat: 13.0594,
         lng: 80.2584,
       },
@@ -1581,7 +1586,7 @@ export const chennaiGarages: Prisma.GarageCreateInput[] = [
       create: {
         address: 'Velachery, Chennai, Tamil Nadu 600042, India',
         lat: 12.9756,
-        lng: 80.2210,
+        lng: 80.221,
       },
     },
   },
@@ -1639,7 +1644,8 @@ export const rioGarages: Prisma.GarageCreateInput[] = [
     Slots: { create: getRandomSlots() },
     Address: {
       create: {
-        address: 'Av. Atlântica, Copacabana, Rio de Janeiro - RJ, 22070-012, Brazil',
+        address:
+          'Av. Atlântica, Copacabana, Rio de Janeiro - RJ, 22070-012, Brazil',
         lat: -22.9711,
         lng: -43.1822,
       },
@@ -1667,7 +1673,8 @@ export const rioGarages: Prisma.GarageCreateInput[] = [
     Slots: { create: getRandomSlots() },
     Address: {
       create: {
-        address: 'Rua Visconde de Pirajá, Ipanema, Rio de Janeiro - RJ, 22410-002, Brazil',
+        address:
+          'Rua Visconde de Pirajá, Ipanema, Rio de Janeiro - RJ, 22410-002, Brazil',
         lat: -22.9838,
         lng: -43.2096,
       },
@@ -1811,7 +1818,8 @@ export const capeTownGarages: Prisma.GarageCreateInput[] = [
     Slots: { create: getRandomSlots() },
     Address: {
       create: {
-        address: 'Long St, Cape Town City Centre, Cape Town, 8001, South Africa',
+        address:
+          'Long St, Cape Town City Centre, Cape Town, 8001, South Africa',
         lat: -33.9211,
         lng: 18.4196,
       },
@@ -1868,7 +1876,7 @@ export const capeTownGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: 'Cape Point Rd, Cape Point, 8001, South Africa',
-        lat: -34.3570,
+        lat: -34.357,
         lng: 18.4896,
       },
     },
@@ -1895,7 +1903,8 @@ export const capeTownGarages: Prisma.GarageCreateInput[] = [
     Slots: { create: getRandomSlots() },
     Address: {
       create: {
-        address: 'Nelson Mandela Gateway, V&A Waterfront, Cape Town, 8001, South Africa',
+        address:
+          'Nelson Mandela Gateway, V&A Waterfront, Cape Town, 8001, South Africa',
         lat: -33.9068,
         lng: 18.4232,
       },
@@ -1911,7 +1920,7 @@ export const capeTownGarages: Prisma.GarageCreateInput[] = [
       create: {
         address: 'Constantia, Cape Town, 7806, South Africa',
         lat: -34.0337,
-        lng: 18.4200,
+        lng: 18.42,
       },
     },
   },
@@ -2156,7 +2165,7 @@ export const beijingGarages: Prisma.GarageCreateInput[] = [
     Address: {
       create: {
         address: '19 Xinjiangongmen Rd, Haidian, Beijing, 100091, China',
-        lat: 39.9990,
+        lat: 39.999,
         lng: 116.2753,
       },
     },
@@ -2222,4 +2231,4 @@ export const allLocationGarages = [
   ...capeTownGarages,
   ...moscowGarages,
   ...beijingGarages,
-] 
+]

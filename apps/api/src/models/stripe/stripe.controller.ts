@@ -30,7 +30,9 @@ export class StripeController {
     try {
       // Comprehensive validation for Indian compliance
       if (!createStripeDto.customerInfo) {
-        throw new BadRequestException('Customer information is required for Indian export compliance')
+        throw new BadRequestException(
+          'Customer information is required for Indian export compliance',
+        )
       }
 
       const { customerInfo } = createStripeDto
@@ -42,13 +44,23 @@ export class StripeController {
 
       // Validate email
       if (!customerInfo.email) {
-        throw new BadRequestException('Email address is required for payment processing')
+        throw new BadRequestException(
+          'Email address is required for payment processing',
+        )
       }
 
       // Validate complete address
       const { address } = customerInfo
-      if (!address || !address.line1 || !address.city || !address.state || !address.postal_code) {
-        throw new BadRequestException('Complete address (line1, city, state, postal_code) is required for Indian export compliance')
+      if (
+        !address ||
+        !address.line1 ||
+        !address.city ||
+        !address.state ||
+        !address.postal_code
+      ) {
+        throw new BadRequestException(
+          'Complete address (line1, city, state, postal_code) is required for Indian export compliance',
+        )
       }
 
       // Validate PIN code format
@@ -81,7 +93,7 @@ export class StripeController {
 
       const bookingInput: CreateBookingInput = JSON.parse(bookingData)
       const newBooking = await this.bookingService.create(bookingInput)
-      
+
       res.redirect(process.env.BOOKINGS_REDIRECT_URL)
     } catch (error) {
       console.error('Stripe success handler error:', error)

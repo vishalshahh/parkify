@@ -22,13 +22,22 @@ export default class StripeService {
     try {
       // Validate customer info for Indian compliance
       if (!customerInfo || !customerInfo.name || !customerInfo.address) {
-        throw new BadRequestException('Customer name and address are required for Indian export compliance')
+        throw new BadRequestException(
+          'Customer name and address are required for Indian export compliance',
+        )
       }
 
       // Ensure all required address fields are present
       const { address } = customerInfo
-      if (!address.line1 || !address.city || !address.state || !address.postal_code) {
-        throw new BadRequestException('Complete address (line1, city, state, postal_code) is required for Indian compliance')
+      if (
+        !address.line1 ||
+        !address.city ||
+        !address.state ||
+        !address.postal_code
+      ) {
+        throw new BadRequestException(
+          'Complete address (line1, city, state, postal_code) is required for Indian compliance',
+        )
       }
 
       // Create Stripe customer with FULL address for Indian compliance
@@ -69,24 +78,24 @@ export default class StripeService {
             },
           })),
         mode: 'payment',
-        
+
         // CRITICAL for Indian compliance - must collect billing address
         billing_address_collection: 'required',
-        
+
         // Collect phone number as additional verification
         phone_number_collection: {
           enabled: true,
         },
-        
+
         // Pre-fill with our collected information (correct property)
         customer_update: {
           address: 'auto',
           name: 'auto',
         },
-        
+
         success_url: process.env.STRIPE_SUCCESS_URL,
         cancel_url: process.env.STRIPE_CANCEL_URL,
-        
+
         metadata: {
           uid,
           bookingData: JSON.stringify(bookingData),
@@ -97,7 +106,7 @@ export default class StripeService {
           customer_country: 'IN',
           business_type: 'parking_services',
         },
-        
+
         // Additional invoice settings for compliance
         invoice_creation: {
           enabled: true,
@@ -126,7 +135,9 @@ export default class StripeService {
     } catch (error) {
       console.error('Stripe session creation error:', error)
       if (error.message?.includes('export transactions')) {
-        throw new BadRequestException('Unable to process payment: Customer information incomplete for Indian regulations. Please ensure all address fields are filled.')
+        throw new BadRequestException(
+          'Unable to process payment: Customer information incomplete for Indian regulations. Please ensure all address fields are filled.',
+        )
       }
       throw error
     }

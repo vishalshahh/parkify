@@ -6,12 +6,15 @@ export const PaymentSuccessMessage = () => {
           ✓
         </div>
         <div>
-          <div className="font-semibold text-green-800">Payment Processed Successfully!</div>
+          <div className="font-semibold text-green-800">
+            Payment Processed Successfully!
+          </div>
           <div className="text-sm text-green-700">
-            Your booking has been confirmed. No need to re-enter your information.
+            Your booking has been confirmed. No need to re-enter your
+            information.
           </div>
         </div>
       </div>
     </div>
   )
-} 
+}

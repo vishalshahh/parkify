@@ -59,7 +59,9 @@ export const BookSlotPopup = ({
     totalPriceObj.valetChargePickup
 
   const [booking, setBooking] = useState(false)
-  const [customerInfo, setCustomerInfo] = useState<CustomerInfoFormType | null>(null)
+  const [customerInfo, setCustomerInfo] = useState<CustomerInfoFormType | null>(
+    null,
+  )
 
   const handleBooking = async (data: FormTypeBookSlot) => {
     if (!uid) {
@@ -101,7 +103,7 @@ export const BookSlotPopup = ({
         uid!,
         totalPriceObj,
         bookingData,
-        customerInfo // Pass customer info
+        customerInfo, // Pass customer info
       )
     } catch (error) {
       console.error('Booking error:', error)
@@ -215,17 +217,25 @@ export const BookSlotPopup = ({
         {/* Step Indicator */}
         <div className="flex items-center justify-between mb-0 text-sm py-4">
           <div className="flex items-center gap-2">
-            <span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs">1</span>
+            <span className="w-6 h-6 bg-primary text-white rounded-full flex items-center justify-center text-xs">
+              1
+            </span>
             <span>Booking Details</span>
           </div>
           <div className="h-px bg-gray-300 flex-1 mx-2"></div>
           <div className="flex items-center gap-2">
-            <span className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${customerInfo ? 'bg-primary text-white' : 'bg-gray-300 text-gray-600'}`}>2</span>
+            <span
+              className={`w-6 h-6 rounded-full flex items-center justify-center text-xs ${customerInfo ? 'bg-primary text-white' : 'bg-gray-300 text-gray-600'}`}
+            >
+              2
+            </span>
             <span>Payment Info</span>
           </div>
           <div className="h-px bg-gray-300 flex-1 mx-2"></div>
           <div className="flex items-center gap-2">
-            <span className="w-6 h-6 bg-gray-300 text-gray-600 rounded-full flex items-center justify-center text-xs">3</span>
+            <span className="w-6 h-6 bg-gray-300 text-gray-600 rounded-full flex items-center justify-center text-xs">
+              3
+            </span>
             <span>Pay</span>
           </div>
         </div>
@@ -266,13 +276,13 @@ export const BookSlotPopup = ({
           disabled={!customerInfo}
           className="mt-4"
         >
-          {customerInfo ? (
-            totalPrice ? `Proceed to Pay ₹${totalPrice}` : 'Proceed to Payment'
-          ) : (
-            'Complete Information Above'
-          )}
+          {customerInfo
+            ? totalPrice
+              ? `Proceed to Pay ₹${totalPrice}`
+              : 'Proceed to Payment'
+            : 'Complete Information Above'}
         </Button>
-        
+
         {!customerInfo && (
           <div className="text-xs text-center text-gray-600 mt-2">
             Please fill in your information above to continue to secure checkout

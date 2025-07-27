@@ -33,7 +33,7 @@ export const CreateCompany = () => {
       setValue('managerId', uid)
     }
     setValue('managerName', managerName)
-  }, [uid])
+  }, [uid, managerName, setValue])
 
   const [open, setOpen] = useState(false)
 

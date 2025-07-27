@@ -6,7 +6,7 @@ type MapProps = React.ComponentProps<typeof MapGl> & { height?: string }
 export const Map = ({ height = 'calc(100vh - 4rem)', ...props }: MapProps) => {
   const [isLoading, setIsLoading] = useState(true)
   const [hasError, setHasError] = useState(false)
-  
+
   // Debug token
   useEffect(() => {
     const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN
@@ -55,12 +55,12 @@ export const Map = ({ height = 'calc(100vh - 4rem)', ...props }: MapProps) => {
           </div>
         </div>
       )}
-      
+
       {hasError && (
         <div className="absolute inset-0 flex items-center justify-center bg-gray-100 z-10">
           <div className="text-center text-red-600">
             <div className="text-sm mb-2">Failed to load map</div>
-            <button 
+            <button
               className="px-3 py-1 bg-primary text-white rounded text-xs"
               onClick={() => {
                 setHasError(false)

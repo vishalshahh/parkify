@@ -20,7 +20,7 @@ export const ShowGarages = () => {
     if (variables) {
       searchGarages({ variables })
     }
-  }, [variables])
+  }, [variables, searchGarages])
 
   const garages = data?.searchGarages || previousData?.searchGarages || []
   const loading = debouncing || garagesLoading
