@@ -24,6 +24,14 @@ export class CustomerWhereInputStrict
   createdAt: DateTimeFilter
   updatedAt: DateTimeFilter
   displayName: StringFilter
+  
+  // New address fields
+  addressLine1: StringFilter
+  city: StringFilter
+  state: StringFilter
+  postalCode: StringFilter
+  country: StringFilter
+  
   Bookings: BookingListRelationFilter
   Reviews: ReviewListRelationFilter
 

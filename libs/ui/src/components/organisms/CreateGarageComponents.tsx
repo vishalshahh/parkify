@@ -13,6 +13,7 @@ import { SlotType } from '@parkify/network/src/gql/generated'
 import { HtmlLabel } from '../atoms/HtmlLabel'
 import { HtmlSelect } from '../atoms/HtmlSelect'
 import { HtmlInput } from '../atoms/HtmlInput'
+import { PARKING_RATES } from '@parkify/util/pricing'
 
 export const GarageMapMarker = () => {
   const { location } = useWatch<FormTypeCreateGarage>()
@@ -170,7 +171,7 @@ export const AddSlots = () => {
             length: 10,
             width: 10,
             height: 10,
-            pricePerHour: 20,
+            pricePerHour: PARKING_RATES.CAR, // Use constant
             count: 5,
             type: SlotType.Car,
           })

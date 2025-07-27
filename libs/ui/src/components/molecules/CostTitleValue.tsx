@@ -11,7 +11,7 @@ export const CostTitleValue = ({
   return (
     <div className="flex justify-between text-lg font-bold">
       <div>{title}</div>
-      <div>${price}</div>
+      <div>₹{price}</div>
     </div>
   )
 }

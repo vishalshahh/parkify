@@ -36,10 +36,6 @@ export const majorCitiesLocationInfo: LocationInfo[] = [
     latLng: [13.0827, 80.2707],
   },
   {
-    placeName: 'New York, New York, United States',
-    latLng: [40.7128, -74.006],
-  },
-  {
     placeName: 'London, Greater London, England, United Kingdom',
     latLng: [51.5074, -0.1278],
   },
@@ -73,6 +69,8 @@ export const majorCitiesLocationInfo: LocationInfo[] = [
   },
 ]
 
-export const VALET_CHARGE_PER_METER = 0.005
+// Valet charges: 100rs for typical pickup distance (assuming ~5km average)
+// This works out to approximately 0.02rs per meter for a 5km trip = 100rs
+export const VALET_CHARGE_PER_METER = 0.02
 
 export const TAKE_COUNT = 12

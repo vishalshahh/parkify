@@ -28,11 +28,25 @@
         },
         {
           "file": "apps/web/package.json",
-          "hash": "18393770437219942885",
+          "hash": "11169925645947910161",
           "deps": [
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:autoprefixer",
+            "npm:eslint",
+            "npm:eslint-config-next@14.1.4",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:typescript",
             "@parkify/network",
             "@parkify/sample-lib",
-            "@parkify/ui"
+            "@parkify/ui",
+            "npm:@tabler/icons-react",
+            "npm:next@14.1.4",
+            "npm:next-auth",
+            "npm:react",
+            "npm:react-dom"
           ]
         },
         {
@@ -104,322 +118,6 @@
           "hash": "12936221474557794499"
         }
       ],
-      "@parkify/forms": [
-        {
-          "file": "libs/forms/package.json",
-          "hash": "526889026908072009"
-        },
-        {
-          "file": "libs/forms/src/adapters/searchFormAdapter.ts",
-          "hash": "12859981846027183809"
-        },
-        {
-          "file": "libs/forms/src/adapters/util.ts",
-          "hash": "813068890982100068"
-        },
-        {
-          "file": "libs/forms/src/bookSlot.tsx",
-          "hash": "13167031970618570807"
-        },
-        {
-          "file": "libs/forms/src/createCompany.ts",
-          "hash": "4380537853071539110"
-        },
-        {
-          "file": "libs/forms/src/createGarage.tsx",
-          "hash": "214789387913869615"
-        },
-        {
-          "file": "libs/forms/src/createSlots.ts",
-          "hash": "17504453533262577586"
-        },
-        {
-          "file": "libs/forms/src/createUid.ts",
-          "hash": "8462631711815053366"
-        },
-        {
-          "file": "libs/forms/src/createValet.ts",
-          "hash": "6440510132180395931"
-        },
-        {
-          "file": "libs/forms/src/login.tsx",
-          "hash": "1014189757167921858"
-        },
-        {
-          "file": "libs/forms/src/register.tsx",
-          "hash": "13399419665511730166"
-        },
-        {
-          "file": "libs/forms/src/schemas.ts",
-          "hash": "16014452263787135725"
-        },
-        {
-          "file": "libs/forms/src/searchGarages.tsx",
-          "hash": "6269681964426806692"
-        },
-        {
-          "file": "libs/forms/src/util/index.ts",
-          "hash": "15313947975565766165"
-        },
-        {
-          "file": "libs/forms/tsconfig.json",
-          "hash": "12053352178282715962"
-        }
-      ],
-      "@parkify/network": [
-        {
-          "file": "libs/network/codegen.ts",
-          "hash": "596092472759370737"
-        },
-        {
-          "file": "libs/network/next-auth.d.ts",
-          "hash": "6929401787329986376"
-        },
-        {
-          "file": "libs/network/package.json",
-          "hash": "17799382432574426251"
-        },
-        {
-          "file": "libs/network/src/config/apollo.tsx",
-          "hash": "18065035441060385382"
-        },
-        {
-          "file": "libs/network/src/config/authOptions.ts",
-          "hash": "12561023393091959816"
-        },
-        {
-          "file": "libs/network/src/fetch/index.ts",
-          "hash": "2908994720606023079"
-        },
-        {
-          "file": "libs/network/src/gql/generated.tsx",
-          "hash": "4044489140943426033"
-        },
-        {
-          "file": "libs/network/src/gql/queries.graphql",
-          "hash": "9388533150208624288"
-        },
-        {
-          "file": "libs/network/tsconfig.json",
-          "hash": "12053352178282715962"
-        }
-      ],
-      "@parkify/3d": [
-        {
-          "file": "libs/3d/package.json",
-          "hash": "6604474631031666341"
-        },
-        {
-          "file": "libs/3d/src/components/BlinkingParkingSlot.tsx",
-          "hash": "3270535272156178493"
-        },
-        {
-          "file": "libs/3d/src/components/Building.tsx",
-          "hash": "10780052587746128144"
-        },
-        {
-          "file": "libs/3d/src/components/BuildingSet.tsx",
-          "hash": "9220712103568802316"
-        },
-        {
-          "file": "libs/3d/src/components/Car.tsx",
-          "hash": "15521446496890279373"
-        },
-        {
-          "file": "libs/3d/src/components/GradientPlane.tsx",
-          "hash": "18144638419377670538"
-        },
-        {
-          "file": "libs/3d/src/components/Spawner.tsx",
-          "hash": "17058704147012211229"
-        },
-        {
-          "file": "libs/3d/src/components/Square.tsx",
-          "hash": "8215649860254108956"
-        },
-        {
-          "file": "libs/3d/src/components/camera/Rotating.tsx",
-          "hash": "15097619297097849792"
-        },
-        {
-          "file": "libs/3d/src/scenes/CarScene.tsx",
-          "hash": "205021582556644274"
-        },
-        {
-          "file": "libs/3d/src/util/buildingSets.ts",
-          "hash": "4501932588448906160"
-        },
-        {
-          "file": "libs/3d/src/util/comments.ts",
-          "hash": "10032765048416750873"
-        },
-        {
-          "file": "libs/3d/src/util/constants.ts",
-          "hash": "3280899539837210394"
-        },
-        {
-          "file": "libs/3d/src/util/index.ts",
-          "hash": "1502387692670933056"
-        },
-        {
-          "file": "libs/3d/src/util/types.ts",
-          "hash": "11433595376616304968"
-        },
-        {
-          "file": "libs/3d/tsconfig.json",
-          "hash": "12053352178282715962"
-        }
-      ],
-      "@parkify/sample-lib": [
-        {
-          "file": "libs/sample-lib/index.ts",
-          "hash": "16729261508988592546"
-        },
-        {
-          "file": "libs/sample-lib/package.json",
-          "hash": "548766380398334333"
-        },
-        {
-          "file": "libs/sample-lib/tsconfig.json",
-          "hash": "14590710882709848906"
-        }
-      ],
-      "@parkify/web-admin": [
-        {
-          "file": "apps/web-admin/.eslintrc.json",
-          "hash": "10616060546436571437"
-        },
-        {
-          "file": "apps/web-admin/.gitignore",
-          "hash": "15751075988610075934"
-        },
-        {
-          "file": "apps/web-admin/next.config.mjs",
-          "hash": "16492501828799852533"
-        },
-        {
-          "file": "apps/web-admin/package.json",
-          "hash": "16596340038975460413"
-        },
-        {
-          "file": "apps/web-admin/postcss.config.mjs",
-          "hash": "2557392112968376575"
-        },
-        {
-          "file": "apps/web-admin/public/next.svg",
-          "hash": "8300767200008744458"
-        },
-        {
-          "file": "apps/web-admin/public/user.png",
-          "hash": "16941821795138000203"
-        },
-        {
-          "file": "apps/web-admin/public/vercel.svg",
-          "hash": "2376673330454856631"
-        },
-        {
-          "file": "apps/web-admin/src/app/api/auth/[...nextauth]/route.ts",
-          "hash": "7366840909368449911"
-        },
-        {
-          "file": "apps/web-admin/src/app/api/auth/token/route.ts",
-          "hash": "16938433310170514210"
-        },
-        {
-          "file": "apps/web-admin/src/app/favicon.ico",
-          "hash": "9157999678830540297"
-        },
-        {
-          "file": "apps/web-admin/src/app/layout.tsx",
-          "hash": "14749164271760344159"
-        },
-        {
-          "file": "apps/web-admin/src/app/login/page.tsx",
-          "hash": "3100909399507413507"
-        },
-        {
-          "file": "apps/web-admin/src/app/manageAdmins/page.tsx",
-          "hash": "5520809553415931063"
-        },
-        {
-          "file": "apps/web-admin/src/app/page.tsx",
-          "hash": "14597376112387443575"
-        },
-        {
-          "file": "apps/web-admin/src/app/register/page.tsx",
-          "hash": "14153439251707408870"
-        },
-        {
-          "file": "apps/web-admin/tailwind.config.ts",
-          "hash": "16967495277415250122"
-        },
-        {
-          "file": "apps/web-admin/tsconfig.json",
-          "hash": "4320684160905164141"
-        },
-        {
-          "file": "apps/web-admin/types.d.ts",
-          "hash": "12936221474557794499"
-        }
-      ],
-      "@parkify/util": [
-        {
-          "file": "libs/util/constants.ts",
-          "hash": "2548118878588783040"
-        },
-        {
-          "file": "libs/util/date.ts",
-          "hash": "4172782034646401501"
-        },
-        {
-          "file": "libs/util/hooks/async.ts",
-          "hash": "8493820138059747599"
-        },
-        {
-          "file": "libs/util/hooks/cloudinary.ts",
-          "hash": "16797054993408262638"
-        },
-        {
-          "file": "libs/util/hooks/dialog.ts",
-          "hash": "1238686928551521995"
-        },
-        {
-          "file": "libs/util/hooks/directions.ts",
-          "hash": "12180658695919046680"
-        },
-        {
-          "file": "libs/util/hooks/keys.ts",
-          "hash": "15976907566512513771"
-        },
-        {
-          "file": "libs/util/hooks/location.ts",
-          "hash": "8129724174922047971"
-        },
-        {
-          "file": "libs/util/hooks/pagination.ts",
-          "hash": "11526730109641553586"
-        },
-        {
-          "file": "libs/util/hooks/price.ts",
-          "hash": "8691826196305781718"
-        },
-        {
-          "file": "libs/util/index.ts",
-          "hash": "10876176631037004134"
-        },
-        {
-          "file": "libs/util/package.json",
-          "hash": "2947776056596837456"
-        },
-        {
-          "file": "libs/util/tsconfig.json",
-          "hash": "9617126365741353194"
-        },
-        {
-          "file": "libs/util/types.ts",
-          "hash": "6217669834358572036"
-        }
-      ],
       "@parkify/web-manager": [
         {
           "file": "apps/web-manager/.eslintrc.json",
@@ -435,7 +133,20 @@
         },
         {
           "file": "apps/web-manager/package.json",
-          "hash": "2425302467463780805"
+          "hash": "1426035357764339925",
+          "deps": [
+            "npm:typescript",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:next"
+          ]
         },
         {
           "file": "apps/web-manager/postcss.config.mjs",
@@ -510,6 +221,244 @@
           "hash": "12936221474557794499"
         }
       ],
+      "@parkify/util": [
+        {
+          "file": "libs/util/constants.ts",
+          "hash": "2548118878588783040"
+        },
+        {
+          "file": "libs/util/date.ts",
+          "hash": "4172782034646401501"
+        },
+        {
+          "file": "libs/util/hooks/async.ts",
+          "hash": "8493820138059747599"
+        },
+        {
+          "file": "libs/util/hooks/cloudinary.ts",
+          "hash": "16797054993408262638"
+        },
+        {
+          "file": "libs/util/hooks/dialog.ts",
+          "hash": "1238686928551521995"
+        },
+        {
+          "file": "libs/util/hooks/directions.ts",
+          "hash": "12180658695919046680"
+        },
+        {
+          "file": "libs/util/hooks/keys.ts",
+          "hash": "15976907566512513771"
+        },
+        {
+          "file": "libs/util/hooks/location.ts",
+          "hash": "8129724174922047971"
+        },
+        {
+          "file": "libs/util/hooks/pagination.ts",
+          "hash": "11526730109641553586"
+        },
+        {
+          "file": "libs/util/hooks/price.ts",
+          "hash": "8691826196305781718"
+        },
+        {
+          "file": "libs/util/index.ts",
+          "hash": "10876176631037004134"
+        },
+        {
+          "file": "libs/util/package.json",
+          "hash": "2947776056596837456"
+        },
+        {
+          "file": "libs/util/tsconfig.json",
+          "hash": "9617126365741353194"
+        },
+        {
+          "file": "libs/util/types.ts",
+          "hash": "6217669834358572036"
+        }
+      ],
+      "@parkify/network": [
+        {
+          "file": "libs/network/codegen.ts",
+          "hash": "596092472759370737"
+        },
+        {
+          "file": "libs/network/next-auth.d.ts",
+          "hash": "6929401787329986376"
+        },
+        {
+          "file": "libs/network/package.json",
+          "hash": "17799382432574426251"
+        },
+        {
+          "file": "libs/network/src/config/apollo.tsx",
+          "hash": "18065035441060385382"
+        },
+        {
+          "file": "libs/network/src/config/authOptions.ts",
+          "hash": "12561023393091959816"
+        },
+        {
+          "file": "libs/network/src/fetch/index.ts",
+          "hash": "2908994720606023079"
+        },
+        {
+          "file": "libs/network/src/gql/generated.tsx",
+          "hash": "4044489140943426033"
+        },
+        {
+          "file": "libs/network/src/gql/queries.graphql",
+          "hash": "9388533150208624288"
+        },
+        {
+          "file": "libs/network/tsconfig.json",
+          "hash": "12053352178282715962"
+        }
+      ],
+      "@parkify/forms": [
+        {
+          "file": "libs/forms/package.json",
+          "hash": "526889026908072009"
+        },
+        {
+          "file": "libs/forms/src/adapters/searchFormAdapter.ts",
+          "hash": "12859981846027183809"
+        },
+        {
+          "file": "libs/forms/src/adapters/util.ts",
+          "hash": "813068890982100068"
+        },
+        {
+          "file": "libs/forms/src/bookSlot.tsx",
+          "hash": "13167031970618570807"
+        },
+        {
+          "file": "libs/forms/src/createCompany.ts",
+          "hash": "4380537853071539110"
+        },
+        {
+          "file": "libs/forms/src/createGarage.tsx",
+          "hash": "214789387913869615"
+        },
+        {
+          "file": "libs/forms/src/createSlots.ts",
+          "hash": "17504453533262577586"
+        },
+        {
+          "file": "libs/forms/src/createUid.ts",
+          "hash": "8462631711815053366"
+        },
+        {
+          "file": "libs/forms/src/createValet.ts",
+          "hash": "6440510132180395931"
+        },
+        {
+          "file": "libs/forms/src/login.tsx",
+          "hash": "1014189757167921858"
+        },
+        {
+          "file": "libs/forms/src/register.tsx",
+          "hash": "13399419665511730166"
+        },
+        {
+          "file": "libs/forms/src/schemas.ts",
+          "hash": "16014452263787135725"
+        },
+        {
+          "file": "libs/forms/src/searchGarages.tsx",
+          "hash": "6269681964426806692"
+        },
+        {
+          "file": "libs/forms/src/util/index.ts",
+          "hash": "15313947975565766165"
+        },
+        {
+          "file": "libs/forms/tsconfig.json",
+          "hash": "12053352178282715962"
+        }
+      ],
+      "@parkify/sample-lib": [
+        {
+          "file": "libs/sample-lib/index.ts",
+          "hash": "16729261508988592546"
+        },
+        {
+          "file": "libs/sample-lib/package.json",
+          "hash": "548766380398334333"
+        },
+        {
+          "file": "libs/sample-lib/tsconfig.json",
+          "hash": "14590710882709848906"
+        }
+      ],
+      "@parkify/3d": [
+        {
+          "file": "libs/3d/package.json",
+          "hash": "6604474631031666341"
+        },
+        {
+          "file": "libs/3d/src/components/BlinkingParkingSlot.tsx",
+          "hash": "3270535272156178493"
+        },
+        {
+          "file": "libs/3d/src/components/Building.tsx",
+          "hash": "10780052587746128144"
+        },
+        {
+          "file": "libs/3d/src/components/BuildingSet.tsx",
+          "hash": "9220712103568802316"
+        },
+        {
+          "file": "libs/3d/src/components/Car.tsx",
+          "hash": "15521446496890279373"
+        },
+        {
+          "file": "libs/3d/src/components/GradientPlane.tsx",
+          "hash": "18144638419377670538"
+        },
+        {
+          "file": "libs/3d/src/components/Spawner.tsx",
+          "hash": "17058704147012211229"
+        },
+        {
+          "file": "libs/3d/src/components/Square.tsx",
+          "hash": "8215649860254108956"
+        },
+        {
+          "file": "libs/3d/src/components/camera/Rotating.tsx",
+          "hash": "15097619297097849792"
+        },
+        {
+          "file": "libs/3d/src/scenes/CarScene.tsx",
+          "hash": "205021582556644274"
+        },
+        {
+          "file": "libs/3d/src/util/buildingSets.ts",
+          "hash": "4501932588448906160"
+        },
+        {
+          "file": "libs/3d/src/util/comments.ts",
+          "hash": "10032765048416750873"
+        },
+        {
+          "file": "libs/3d/src/util/constants.ts",
+          "hash": "3280899539837210394"
+        },
+        {
+          "file": "libs/3d/src/util/index.ts",
+          "hash": "1502387692670933056"
+        },
+        {
+          "file": "libs/3d/src/util/types.ts",
+          "hash": "11433595376616304968"
+        },
+        {
+          "file": "libs/3d/tsconfig.json",
+          "hash": "12053352178282715962"
+        }
+      ],
       "@parkify/api": [
         {
           "file": "apps/api/.eslintrc.js",
@@ -529,7 +478,49 @@
         },
         {
           "file": "apps/api/package.json",
-          "hash": "757191319842498233"
+          "hash": "12718170783708552521",
+          "deps": [
+            "npm:@nestjs/cli@9.5.0",
+            "npm:@nestjs/schematics@9.2.0",
+            "npm:@nestjs/testing@9.4.3",
+            "npm:@types/express",
+            "npm:@types/jest",
+            "npm:@types/node@18.15.11",
+            "npm:@types/supertest",
+            "npm:@typescript-eslint/eslint-plugin",
+            "npm:@typescript-eslint/parser",
+            "npm:eslint",
+            "npm:eslint-config-prettier",
+            "npm:eslint-plugin-prettier@4.2.5",
+            "npm:jest",
+            "npm:prettier@2.8.8",
+            "npm:prisma",
+            "npm:source-map-support",
+            "npm:supertest",
+            "npm:ts-jest@29.0.5",
+            "npm:ts-loader@9.5.2",
+            "npm:ts-node@10.9.2",
+            "npm:tsconfig-paths",
+            "npm:typescript@4.9.5",
+            "npm:@apollo/server",
+            "npm:@nestjs/apollo@12.2.2",
+            "npm:@nestjs/common@9.4.3",
+            "npm:@nestjs/config@3.3.0",
+            "npm:@nestjs/core@9.4.3",
+            "npm:@nestjs/graphql@12.2.2",
+            "npm:@nestjs/jwt@10.2.0",
+            "npm:@nestjs/platform-express@9.4.3",
+            "npm:@nestjs/swagger@7.4.2",
+            "npm:@prisma/client",
+            "npm:bcryptjs",
+            "npm:class-transformer",
+            "npm:class-validator",
+            "npm:graphql",
+            "npm:reflect-metadata",
+            "npm:rxjs",
+            "npm:stripe",
+            "npm:uuid"
+          ]
         },
         {
           "file": "apps/api/prisma/migrations/20240505193648_init/migration.sql",
@@ -548,12 +539,16 @@
           "hash": "11736990228781018795"
         },
         {
+          "file": "apps/api/prisma/seed/all-locations-data.ts",
+          "hash": "14503353794479516861"
+        },
+        {
           "file": "apps/api/prisma/seed/data.ts",
           "hash": "7026843776968885701"
         },
         {
           "file": "apps/api/prisma/seed/index.ts",
-          "hash": "14949447342425071507"
+          "hash": "13652067029242945232"
         },
         {
           "file": "apps/api/prisma/seed/util.ts",
@@ -1440,84 +1435,6 @@
           "hash": "5073866550243764688"
         }
       ],
-      "@parkify/web-valet": [
-        {
-          "file": "apps/web-valet/.eslintrc.json",
-          "hash": "10616060546436571437"
-        },
-        {
-          "file": "apps/web-valet/.gitignore",
-          "hash": "15751075988610075934"
-        },
-        {
-          "file": "apps/web-valet/next.config.mjs",
-          "hash": "16492501828799852533"
-        },
-        {
-          "file": "apps/web-valet/package.json",
-          "hash": "1130651847769078563"
-        },
-        {
-          "file": "apps/web-valet/postcss.config.mjs",
-          "hash": "2557392112968376575"
-        },
-        {
-          "file": "apps/web-valet/public/next.svg",
-          "hash": "8300767200008744458"
-        },
-        {
-          "file": "apps/web-valet/public/user.png",
-          "hash": "16941821795138000203"
-        },
-        {
-          "file": "apps/web-valet/public/vercel.svg",
-          "hash": "2376673330454856631"
-        },
-        {
-          "file": "apps/web-valet/src/app/api/auth/[...nextauth]/route.ts",
-          "hash": "7366840909368449911"
-        },
-        {
-          "file": "apps/web-valet/src/app/api/auth/token/route.ts",
-          "hash": "16938433310170514210"
-        },
-        {
-          "file": "apps/web-valet/src/app/favicon.ico",
-          "hash": "9157999678830540297"
-        },
-        {
-          "file": "apps/web-valet/src/app/layout.tsx",
-          "hash": "12866443535016014173"
-        },
-        {
-          "file": "apps/web-valet/src/app/login/page.tsx",
-          "hash": "3100909399507413507"
-        },
-        {
-          "file": "apps/web-valet/src/app/my-trips/page.tsx",
-          "hash": "17695002291951234052"
-        },
-        {
-          "file": "apps/web-valet/src/app/page.tsx",
-          "hash": "12031221915703315879"
-        },
-        {
-          "file": "apps/web-valet/src/app/register/page.tsx",
-          "hash": "14153439251707408870"
-        },
-        {
-          "file": "apps/web-valet/tailwind.config.ts",
-          "hash": "16967495277415250122"
-        },
-        {
-          "file": "apps/web-valet/tsconfig.json",
-          "hash": "4320684160905164141"
-        },
-        {
-          "file": "apps/web-valet/types.d.ts",
-          "hash": "12936221474557794499"
-        }
-      ],
       "@parkify/ui": [
         {
           "file": "libs/ui/.eslintrc.json",
@@ -1983,6 +1900,188 @@
           "file": "libs/ui/types.d.ts",
           "hash": "12936221474557794499"
         }
+      ],
+      "@parkify/web-admin": [
+        {
+          "file": "apps/web-admin/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "apps/web-admin/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "apps/web-admin/next.config.mjs",
+          "hash": "16492501828799852533"
+        },
+        {
+          "file": "apps/web-admin/package.json",
+          "hash": "16904242365091485941",
+          "deps": [
+            "npm:typescript",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web-admin/postcss.config.mjs",
+          "hash": "2557392112968376575"
+        },
+        {
+          "file": "apps/web-admin/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/web-admin/public/user.png",
+          "hash": "16941821795138000203"
+        },
+        {
+          "file": "apps/web-admin/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "apps/web-admin/src/app/api/auth/[...nextauth]/route.ts",
+          "hash": "7366840909368449911"
+        },
+        {
+          "file": "apps/web-admin/src/app/api/auth/token/route.ts",
+          "hash": "16938433310170514210"
+        },
+        {
+          "file": "apps/web-admin/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/web-admin/src/app/layout.tsx",
+          "hash": "14749164271760344159"
+        },
+        {
+          "file": "apps/web-admin/src/app/login/page.tsx",
+          "hash": "3100909399507413507"
+        },
+        {
+          "file": "apps/web-admin/src/app/manageAdmins/page.tsx",
+          "hash": "5520809553415931063"
+        },
+        {
+          "file": "apps/web-admin/src/app/page.tsx",
+          "hash": "14597376112387443575"
+        },
+        {
+          "file": "apps/web-admin/src/app/register/page.tsx",
+          "hash": "14153439251707408870"
+        },
+        {
+          "file": "apps/web-admin/tailwind.config.ts",
+          "hash": "16967495277415250122"
+        },
+        {
+          "file": "apps/web-admin/tsconfig.json",
+          "hash": "4320684160905164141"
+        },
+        {
+          "file": "apps/web-admin/types.d.ts",
+          "hash": "12936221474557794499"
+        }
+      ],
+      "@parkify/web-valet": [
+        {
+          "file": "apps/web-valet/.eslintrc.json",
+          "hash": "10616060546436571437"
+        },
+        {
+          "file": "apps/web-valet/.gitignore",
+          "hash": "15751075988610075934"
+        },
+        {
+          "file": "apps/web-valet/next.config.mjs",
+          "hash": "16492501828799852533"
+        },
+        {
+          "file": "apps/web-valet/package.json",
+          "hash": "3941523520649383",
+          "deps": [
+            "npm:typescript",
+            "npm:@types/node",
+            "npm:@types/react",
+            "npm:@types/react-dom",
+            "npm:postcss",
+            "npm:tailwindcss",
+            "npm:eslint",
+            "npm:eslint-config-next",
+            "npm:react",
+            "npm:react-dom",
+            "npm:next"
+          ]
+        },
+        {
+          "file": "apps/web-valet/postcss.config.mjs",
+          "hash": "2557392112968376575"
+        },
+        {
+          "file": "apps/web-valet/public/next.svg",
+          "hash": "8300767200008744458"
+        },
+        {
+          "file": "apps/web-valet/public/user.png",
+          "hash": "16941821795138000203"
+        },
+        {
+          "file": "apps/web-valet/public/vercel.svg",
+          "hash": "2376673330454856631"
+        },
+        {
+          "file": "apps/web-valet/src/app/api/auth/[...nextauth]/route.ts",
+          "hash": "7366840909368449911"
+        },
+        {
+          "file": "apps/web-valet/src/app/api/auth/token/route.ts",
+          "hash": "16938433310170514210"
+        },
+        {
+          "file": "apps/web-valet/src/app/favicon.ico",
+          "hash": "9157999678830540297"
+        },
+        {
+          "file": "apps/web-valet/src/app/layout.tsx",
+          "hash": "12866443535016014173"
+        },
+        {
+          "file": "apps/web-valet/src/app/login/page.tsx",
+          "hash": "3100909399507413507"
+        },
+        {
+          "file": "apps/web-valet/src/app/my-trips/page.tsx",
+          "hash": "17695002291951234052"
+        },
+        {
+          "file": "apps/web-valet/src/app/page.tsx",
+          "hash": "12031221915703315879"
+        },
+        {
+          "file": "apps/web-valet/src/app/register/page.tsx",
+          "hash": "14153439251707408870"
+        },
+        {
+          "file": "apps/web-valet/tailwind.config.ts",
+          "hash": "16967495277415250122"
+        },
+        {
+          "file": "apps/web-valet/tsconfig.json",
+          "hash": "4320684160905164141"
+        },
+        {
+          "file": "apps/web-valet/types.d.ts",
+          "hash": "12936221474557794499"
+        }
       ]
     },
     "nonProjectFiles": [
@@ -2008,11 +2107,15 @@
       },
       {
         "file": "package.json",
-        "hash": "1275150476984927282"
+        "hash": "10189770382643442125"
       },
       {
         "file": "tsconfig.json",
         "hash": "1527717912508394059"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "6305095892454765218"
       }
     ]
   }

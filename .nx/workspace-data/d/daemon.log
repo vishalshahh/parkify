@@ -2579,3 +2579,14 @@
 [NX Daemon Server] - 2025-07-24T12:35:09.231Z - Closed a connection. Number of open connections: 0
 [NX Daemon Server] - 2025-07-24T12:35:09.232Z - [WATCHER]: Stopping the watcher for /home/vishal/developer/parkify (sources)
 [NX Daemon Server] - 2025-07-24T12:35:09.232Z - [WATCHER]: Stopping the watcher for /home/vishal/developer/parkify (outputs)
+[NX Daemon Server] - 2025-07-27T04:46:31.686Z - Started listening on: /tmp/cac336e303035e8cf78c/d.sock
+[NX Daemon Server] - 2025-07-27T04:46:31.687Z - [WATCHER]: Subscribed to changes within: /home/vishal/Downloads/Vishal/developer/parkify (native)
+[NX Daemon Server] - 2025-07-27T04:46:31.695Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-07-27T04:46:31.695Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2025-07-27T04:46:31.696Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2025-07-27T04:46:31.697Z - [REQUEST]: Responding to the client. Shutdown initiated
+[NX Daemon Server] - 2025-07-27T04:46:31.697Z - Done responding to the client Shutdown initiated
+[NX Daemon Server] - 2025-07-27T04:46:31.697Z - Handled FORCE_SHUTDOWN. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2025-07-27T04:46:31.698Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2025-07-27T04:46:31.698Z - [WATCHER]: Stopping the watcher for /home/vishal/Downloads/Vishal/developer/parkify (sources)
+[NX Daemon Server] - 2025-07-27T04:46:31.698Z - [WATCHER]: Stopping the watcher for /home/vishal/Downloads/Vishal/developer/parkify (outputs)

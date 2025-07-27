@@ -32,4 +32,18 @@ export class CustomersService {
   remove(args: FindUniqueCustomerArgs) {
     return this.prisma.customer.delete(args)
   }
+
+  // Add a method to update customer info after successful payment
+  async updateCustomerAddress(uid: string, addressInfo: any) {
+    return this.prisma.customer.update({
+      where: { uid },
+      data: {
+        addressLine1: addressInfo.line1,
+        city: addressInfo.city,
+        state: addressInfo.state,
+        postalCode: addressInfo.postal_code,
+        country: addressInfo.country,
+      },
+    })
+  }
 }

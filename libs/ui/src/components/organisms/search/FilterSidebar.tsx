@@ -91,7 +91,7 @@ export const FilterSidebar = () => {
                     value={value}
                     onChange={onChange}
                     valueLabelFormat={(sliderValue) =>
-                      `$ ${sliderValue.toLocaleString()}`
+                      `₹ ${sliderValue.toLocaleString()}`
                     }
                     step={5}
                   />

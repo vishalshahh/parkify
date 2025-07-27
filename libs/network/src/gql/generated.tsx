@@ -403,7 +403,12 @@ export type CreateCompanyInput = {
 };
 
 export type CreateCustomerInput = {
+  addressLine1?: InputMaybe<Scalars['String']['input']>;
+  city?: InputMaybe<Scalars['String']['input']>;
+  country?: InputMaybe<Scalars['String']['input']>;
   displayName?: InputMaybe<Scalars['String']['input']>;
+  postalCode?: InputMaybe<Scalars['String']['input']>;
+  state?: InputMaybe<Scalars['String']['input']>;
   uid: Scalars['String']['input'];
 };
 
@@ -479,9 +484,14 @@ export type CreateVerificationInput = {
 
 export type Customer = {
   __typename?: 'Customer';
+  addressLine1?: Maybe<Scalars['String']['output']>;
   bookings: Array<Booking>;
+  city?: Maybe<Scalars['String']['output']>;
+  country?: Maybe<Scalars['String']['output']>;
   createdAt: Scalars['DateTime']['output'];
   displayName?: Maybe<Scalars['String']['output']>;
+  postalCode?: Maybe<Scalars['String']['output']>;
+  state?: Maybe<Scalars['String']['output']>;
   uid: Scalars['String']['output'];
   updatedAt: Scalars['DateTime']['output'];
   user?: Maybe<User>;
@@ -491,8 +501,13 @@ export type CustomerOrderByWithRelationInput = {
   Bookings?: InputMaybe<BookingOrderByRelationAggregateInput>;
   Reviews?: InputMaybe<ReviewOrderByRelationAggregateInput>;
   User?: InputMaybe<UserOrderByWithRelationInput>;
+  addressLine1?: InputMaybe<SortOrder>;
+  city?: InputMaybe<SortOrder>;
+  country?: InputMaybe<SortOrder>;
   createdAt?: InputMaybe<SortOrder>;
   displayName?: InputMaybe<SortOrder>;
+  postalCode?: InputMaybe<SortOrder>;
+  state?: InputMaybe<SortOrder>;
   uid?: InputMaybe<SortOrder>;
   updatedAt?: InputMaybe<SortOrder>;
 };
@@ -503,8 +518,13 @@ export type CustomerRelationFilter = {
 };
 
 export enum CustomerScalarFieldEnum {
+  AddressLine1 = 'addressLine1',
+  City = 'city',
+  Country = 'country',
   CreatedAt = 'createdAt',
   DisplayName = 'displayName',
+  PostalCode = 'postalCode',
+  State = 'state',
   Uid = 'uid',
   UpdatedAt = 'updatedAt'
 }
@@ -516,8 +536,13 @@ export type CustomerWhereInput = {
   OR?: InputMaybe<Array<CustomerWhereInput>>;
   Reviews?: InputMaybe<ReviewListRelationFilter>;
   User?: InputMaybe<UserRelationFilter>;
+  addressLine1?: InputMaybe<StringFilter>;
+  city?: InputMaybe<StringFilter>;
+  country?: InputMaybe<StringFilter>;
   createdAt?: InputMaybe<DateTimeFilter>;
   displayName?: InputMaybe<StringFilter>;
+  postalCode?: InputMaybe<StringFilter>;
+  state?: InputMaybe<StringFilter>;
   uid?: InputMaybe<StringFilter>;
   updatedAt?: InputMaybe<DateTimeFilter>;
 };
@@ -1627,7 +1652,12 @@ export type UpdateCompanyInput = {
 };
 
 export type UpdateCustomerInput = {
+  addressLine1?: InputMaybe<Scalars['String']['input']>;
+  city?: InputMaybe<Scalars['String']['input']>;
+  country?: InputMaybe<Scalars['String']['input']>;
   displayName?: InputMaybe<Scalars['String']['input']>;
+  postalCode?: InputMaybe<Scalars['String']['input']>;
+  state?: InputMaybe<Scalars['String']['input']>;
   uid: Scalars['String']['input'];
 };
 

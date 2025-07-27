@@ -69,6 +69,13 @@ model Customer {
     updatedAt DateTime @updatedAt
 
     displayName String?
+    
+    // New fields for address
+    addressLine1  String?
+    city          String?
+    state         String?
+    postalCode    String?
+    country       String? @default("IN")
 
     Bookings Booking[]
     Reviews  Review[]

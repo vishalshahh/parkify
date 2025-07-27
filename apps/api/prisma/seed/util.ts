@@ -9,28 +9,28 @@ const slotRanges = {
     length: { min: 12, max: 18 },
     width: { min: 8, max: 10 },
     height: { min: 15, max: 20 },
-    pricePerHour: { min: 15, max: 25 },
+    pricePerHour: { min: 50, max: 50 }, // Fixed at ₹50/hour
     count: { min: 2, max: 6 },
   },
   HEAVY: {
     length: { min: 22, max: 30 },
     width: { min: 10, max: 18 },
     height: { min: 20, max: 30 },
-    pricePerHour: { min: 30, max: 50 },
+    pricePerHour: { min: 100, max: 100 }, // Fixed at ₹100/hour
     count: { min: 2, max: 6 },
   },
   BIKE: {
     length: { min: 6, max: 8 },
     width: { min: 2, max: 3 },
     height: { min: 15, max: 20 },
-    pricePerHour: { min: 5, max: 10 },
+    pricePerHour: { min: 30, max: 30 }, // Fixed at ₹30/hour
     count: { min: 2, max: 6 },
   },
   BICYCLE: {
     length: { min: 4, max: 6 },
     width: { min: 1, max: 2 },
     height: { min: 15, max: 20 },
-    pricePerHour: { min: 2, max: 5 },
+    pricePerHour: { min: 10, max: 10 }, // Fixed at ₹10/hour
     count: { min: 2, max: 6 },
   },
 }

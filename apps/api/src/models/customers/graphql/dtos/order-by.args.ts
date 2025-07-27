@@ -23,10 +23,20 @@ export class CustomerOrderByWithRelationInputStrict
   @Field(() => Prisma.SortOrder)
   displayName: Prisma.SortOrder
 
+  // New address fields
+  @Field(() => Prisma.SortOrder)
+  addressLine1: Prisma.SortOrder
+  @Field(() => Prisma.SortOrder)
+  city: Prisma.SortOrder
+  @Field(() => Prisma.SortOrder)
+  state: Prisma.SortOrder
+  @Field(() => Prisma.SortOrder)
+  postalCode: Prisma.SortOrder
+  @Field(() => Prisma.SortOrder)
+  country: Prisma.SortOrder
+
   Bookings: BookingOrderByRelationAggregateInput
   Reviews: ReviewOrderByRelationAggregateInput
-  // Todo: Add below field decorator to the SortOrder properties.
-  // @Field(() => Prisma.SortOrder)
 }
 
 @InputType()

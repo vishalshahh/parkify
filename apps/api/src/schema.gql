@@ -68,6 +68,11 @@ type Valet {
 
 type Customer {
   displayName: String
+  addressLine1: String
+  city: String
+  state: String
+  postalCode: String
+  country: String
   uid: String!
   createdAt: DateTime!
   updatedAt: DateTime!
@@ -323,6 +328,11 @@ input CustomerWhereInput {
   createdAt: DateTimeFilter
   updatedAt: DateTimeFilter
   displayName: StringFilter
+  addressLine1: StringFilter
+  city: StringFilter
+  state: StringFilter
+  postalCode: StringFilter
+  country: StringFilter
   Bookings: BookingListRelationFilter
   Reviews: ReviewListRelationFilter
   AND: [CustomerWhereInput!]
@@ -707,6 +717,11 @@ input CustomerOrderByWithRelationInput {
   createdAt: SortOrder
   updatedAt: SortOrder
   displayName: SortOrder
+  addressLine1: SortOrder
+  city: SortOrder
+  state: SortOrder
+  postalCode: SortOrder
+  country: SortOrder
   User: UserOrderByWithRelationInput
   Bookings: BookingOrderByRelationAggregateInput
   Reviews: ReviewOrderByRelationAggregateInput
@@ -808,6 +823,11 @@ enum CustomerScalarFieldEnum {
   createdAt
   updatedAt
   displayName
+  addressLine1
+  city
+  state
+  postalCode
+  country
 }
 
 input CustomerWhereUniqueInput {
@@ -1183,11 +1203,21 @@ input UpdateAdminInput {
 input CreateCustomerInput {
   displayName: String
   uid: String!
+  addressLine1: String
+  city: String
+  state: String
+  postalCode: String
+  country: String
 }
 
 input UpdateCustomerInput {
   displayName: String
   uid: String!
+  addressLine1: String
+  city: String
+  state: String
+  postalCode: String
+  country: String
 }
 
 input CreateManagerInput {

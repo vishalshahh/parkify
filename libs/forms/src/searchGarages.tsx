@@ -5,8 +5,24 @@ import { ReactNode } from 'react'
 import { DefaultValues, useForm, FormProvider, Form } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { isEndTimeValid, isStartTimeValid } from './util'
+import { initialViewState } from '@parkify/util/constants'
 
 const minMaxTuple = z.tuple([z.number(), z.number()])
+
+// Helper function to calculate default bounds around the initial view state
+const getDefaultLocationFilter = () => {
+  const { latitude, longitude } = initialViewState
+  // Create bounds roughly 0.02 degrees (~2km) in each direction from center
+  const latOffset = 0.02
+  const lngOffset = 0.02
+  
+  return {
+    ne_lat: latitude + latOffset,
+    ne_lng: longitude + lngOffset,
+    sw_lat: latitude - latOffset,
+    sw_lng: longitude - lngOffset,
+  }
+}
 
 export const formSchemaSearchGarage = z
   .object({
@@ -63,11 +79,12 @@ export const AllSlotTypes = [
 
 export const formDefaultValuesSearchGarages: DefaultValues<FormTypeSearchGarage> =
   {
-    pricePerHour: [0, 200],
+    pricePerHour: [0, 150], // Updated range to accommodate new pricing (0-150rs)
     width: [0, 20],
     height: [0, 100],
     length: [0, 100],
     types: AllSlotTypes.sort(),
+    locationFilter: getDefaultLocationFilter(), // Add default location filter
   }
 
 export const FormProviderSearchGarage = ({

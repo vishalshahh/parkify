@@ -21,13 +21,16 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "entity:gql": "npx nestjs-prisma-codegen --graphql",
     "entity:rest": "npx nestjs-prisma-codegen --rest",
-    "entity:complete": "npx nestjs-prisma-codegen --complete"
+    "entity:complete": "npx nestjs-prisma-codegen --complete",
+    "db:reset": "npx prisma migrate reset --force",
+    "db:seed": "npx prisma db seed",
+    "db:reset-and-seed": "npx prisma migrate reset --force && npx prisma db seed"
   },
   "prisma": {
     "seed": "ts-node prisma/seed/index.ts"
   },
   "engines": {
-    "node": "20.x",
+    "node": "22.x",
     "npm": ">=10.0.0"
   },
   "dependencies": {
