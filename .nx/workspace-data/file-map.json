@@ -17,44 +17,44 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": ".husky/pre-commit",
-        "hash": "14193209146131028710"
-      },
-      {
-        "file": "build.sh",
-        "hash": "10794366862339350247"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "17019654293573628040"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "15324714788084809874"
-      },
-      {
-        "file": "yarn.lock",
-        "hash": "387456270893314316"
-      },
-      {
-        "file": ".npmrc",
-        "hash": "11904480606157745632"
-      },
-      {
         "file": "tsconfig.json",
         "hash": "1527717912508394059"
-      },
-      {
-        "file": ".nvmrc",
-        "hash": "5705511160647073979"
       },
       {
         "file": "package.json",
         "hash": "6901247166077481678"
       },
       {
+        "file": ".prettierrc",
+        "hash": "15324714788084809874"
+      },
+      {
+        "file": ".npmrc",
+        "hash": "11904480606157745632"
+      },
+      {
+        "file": ".husky/pre-commit",
+        "hash": "14193209146131028710"
+      },
+      {
+        "file": "yarn.lock",
+        "hash": "387456270893314316"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "5705511160647073979"
+      },
+      {
+        "file": "build.sh",
+        "hash": "10794366862339350247"
+      },
+      {
         "file": "nx.json",
         "hash": "4883124491158709683"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "17019654293573628040"
       }
     ],
     "projectFileMap": {
@@ -69,7 +69,7 @@
         },
         {
           "file": "apps/web/next.config.mjs",
-          "hash": "8546904376813426725"
+          "hash": "2548698957101095273"
         },
         {
           "file": "apps/web/package.json",
