@@ -14,36 +14,36 @@
   "fileMap": {
     "nonProjectFiles": [
       {
-        "file": "nx.json",
-        "hash": "4883124491158709683"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "15324714788084809874"
+        "file": "package.json",
+        "hash": "11562567812256847848"
       },
       {
         "file": "tsconfig.json",
         "hash": "1527717912508394059"
       },
       {
-        "file": ".nvmrc",
-        "hash": "12682565354838973572"
+        "file": ".husky/pre-commit",
+        "hash": "14193209146131028710"
+      },
+      {
+        "file": "nx.json",
+        "hash": "4883124491158709683"
       },
       {
         "file": "yarn.lock",
         "hash": "387456270893314316"
       },
       {
-        "file": ".husky/pre-commit",
-        "hash": "14193209146131028710"
-      },
-      {
-        "file": "package.json",
-        "hash": "11562567812256847848"
+        "file": ".prettierrc",
+        "hash": "15324714788084809874"
       },
       {
         "file": ".gitignore",
         "hash": "17019654293573628040"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "12682565354838973572"
       }
     ],
     "projectFileMap": {
@@ -1723,7 +1723,7 @@
         },
         {
           "file": "apps/web/src/app/layout.tsx",
-          "hash": "13867924508152256645"
+          "hash": "11537209471683242562"
         },
         {
           "file": "apps/web/src/app/login/page.tsx",

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import '@parkify/ui/src/app/globals.css'
 import { MenuItem } from '@parkify/util/types'
 import { ApolloProvider } from '@parkify/network/src/config/apollo'
@@ -9,7 +9,7 @@ import { Container } from '@parkify/ui/src/components/atoms/Container'
 import { Header } from '@parkify/ui/src/components/organisms/Header'
 import { IsAdmin } from '@parkify/ui/src/components/organisms/IsAdmin'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Parkify | Admin',
@@ -28,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-25`}>
+      <body className="bg-gray-25 font-sans">
         <SessionProvider>
           <ApolloProvider>
             <Header type="admin" menuItems={MENUITEMS} />

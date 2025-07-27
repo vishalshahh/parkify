@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import '@parkify/ui/src/app/globals.css'
 import { ApolloProvider } from '@parkify/network/src/config/apollo'
 import { SessionProvider } from '@parkify/ui/src/components/molecules/SessionProvider'
@@ -7,7 +7,12 @@ import { Header } from '@parkify/ui/src/components/organisms/Header'
 import { ToastContainer } from '@parkify/ui/src/components/molecules/Toast'
 import { MenuItem } from '@parkify/util/types'
 import { Container } from '@parkify/ui/src/components/atoms/Container'
-const inter = Inter({ subsets: ['latin'] })
+
+// const inter = Inter({ 
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-inter'
+// })
 
 export const metadata: Metadata = {
   title: 'Parkify',
@@ -28,7 +33,7 @@ export default function RootLayout({
     <html lang="en">
       <SessionProvider>
         <ApolloProvider>
-          <body className={`${inter.className} bg-gray-25`}>
+          <body className="bg-gray-25 font-sans">
             <Header menuItems={MENUITEMS} />
             <Container>{children}</Container>
             <ToastContainer />
